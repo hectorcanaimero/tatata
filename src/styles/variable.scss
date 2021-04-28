@@ -1,0 +1,16 @@
+:root {
+  --color-footer: #2631a4;
+  --color-primary:  #fcac01;
+  --color-tertiary: #fcdde5;
+  --color-secondary: #054a98;
+  --color-text-muted: #757575;
+  --color-clube-condor: #447ab3;
+  --condor-blog: #00c8c8;
+
+  // Product
+  --color-oferta-secondary: #ff173f;
+
+  @mixin font-weight($number) {
+    font-weight: $number !important;
+  }
+}

@@ -1,0 +1,13 @@
+<section class="py-3" *ngIf="item.status">
+  <div class="container">
+    <h1 class="titulo">{{ item.titulo }}</h1>
+    <div class="row justify-content-around">
+      <div class="col-md-6 col-xl-5 align-self-center" *ngFor="let i of item.source">
+        <img [src]="i" class="img-fluid" alt="Como participar">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="bottom">
+  <img src="./assets/images/bottom-background.png" class="w-100" alt="">
+</div>

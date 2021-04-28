@@ -1,0 +1,137 @@
+<div class="card-ofertas z-depth-2" *ngIf="ofertas" (click)="basicModal.show()" (click)="dataLayer(product.dsc_produto)">
+  <div class="row">
+    <div class="col-12">
+      <div class="imagens">
+        <img  [src]=objectHandleService.urlProduto(ofertas.host) [alt]="ofertas.produtos.dsc_produto" class="img-produto">
+        <img  src="assets/images/selo_ddv.png" class="selo-dinheiro-de-volta"  *ngIf="ofertas.preco_cashback">
+        <img src="./assets/images/selo_clube.png" alt="Clube Condor" class="selo_clube" *ngIf="ofertas.preco_clube">
+      </div>
+    </div>
+  </div>
+  <div class="descricao-produto" id="descricao-do-produto">
+    <p class="mb-0">{{ofertas.produtos.dsc_produto}}</p>
+  </div>
+  <div class="preco-regular">
+    <p>
+      {{ ofertas.preco_regular | currency: 'R$':'symbol':'1.2-2':'pt' }}
+      <span class="embalagem">{{ ofertas.produtos.embalagem}}</span>
+    </p>
+  </div>
+  <div class="row ">
+    <div class="col-12 " >
+      <div class="alinhar-centro-horizontal-vertical" style="background: #999999; height: 1px; margin: 5px 10px"></div>
+    </div>
+  </div>
+  <div class="preco-clube" *ngIf="ofertas.preco_clube; else semOfertasClube">
+    <p class="mb-0" >
+      {{ ofertas.preco_clube | currency: 'R$':'symbol':'1.2-2':'pt' }}
+      <span>{{ ofertas.produtos.embalagem}}</span>
+    </p>
+  </div>
+  <ng-template #semOfertasClube>
+    <div style="height: 21.33px"></div>
+  </ng-template>
+
+  <div class="forma-pagamento-clube " *ngIf="ofertas.qtd_clube; else semParcelamentoClube">
+    {{objectHandleService.formaPagamentoCartaoCondor(ofertas.qtd_clube, ofertas.parcela_clube)}}
+  </div>
+  <ng-template #semParcelamentoClube >
+    <div class="forma-pagamento-regular" *ngIf ="ofertas.qtd_regular; else semParcelamento">
+      {{objectHandleService.formaPagamentoRegular(ofertas.qtd_regular, ofertas.parcela_regular)}}
+    </div>
+    <ng-template #semParcelamento>
+      <div style="height: 40px"></div>
+    </ng-template>
+  </ng-template>
+  <div class="bottom">
+    <button mdbBtn type="button" class="btn-round" color="primary" outline="true" size="md" mdbWavesEffect>Visualizar</button>
+    <p class="mb-0">
+      <small>
+        Oferta Válida de {{ ofertas.start | date: "dd/MM/yyyy" }} a {{ ofertas.end | date: "dd/MM/yyyy" }}
+      </small>
+    </p>
+  </div>
+</div>
+
+
+
+<div style="overflow-y: auto" mdbModal #basicModal="mdbModal" class="modal fade modal-product" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100" id="myModalLabel">{{ ofertas.produtos.dsc_produto }}</h5>
+      </div>
+      <div class="modal-body">
+        <div class="card-ofertas z-depth-2" *ngIf="ofertas" (click)="basicModal.show()" (click)="dataLayer(product.dsc_produto)">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="imagens">
+                <img  [src]=objectHandleService.urlProduto(ofertas.host) [alt]="ofertas.produtos.dsc_produto" class="img-produto">
+                <img  src="assets/images/selo_ddv.png" class="selo-dinheiro-de-volta"  *ngIf="ofertas.preco_cashback">
+                <img src="./assets/images/selo_clube.png" alt="Clube Condor" class="selo_clube" *ngIf="ofertas.preco_clube">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="descricao-produto" id="descricao-do-produto">
+                <p class="mb-0">{{ofertas.produtos.dsc_produto}}</p>
+              </div>
+              <div class="preco-regular">
+                <p>
+                  {{ ofertas.preco_regular | currency: 'R$':'symbol':'1.2-2':'pt' }}
+                  <span class="embalagem">{{ ofertas.produtos.embalagem}}</span>
+                </p>
+              </div>
+              <div class="row ">
+                <div class="col-12 " >
+                  <div class="alinhar-centro-horizontal-vertical" style="background: #999999; height: 1px; margin: 5px 10px"></div>
+                </div>
+              </div>
+              <div class="preco-clube" *ngIf="ofertas.preco_clube; else semOfertasClube">
+                <p class="mb-0" >
+                  {{ ofertas.preco_clube | currency: 'R$':'symbol':'1.2-2':'pt' }}
+                  <span>{{ ofertas.produtos.embalagem}}</span>
+                </p>
+              </div>
+              <ng-template #semOfertasClube>
+                <div style="height: 21.33px"></div>
+              </ng-template>
+
+              <div class="forma-pagamento-clube " *ngIf="ofertas.qtd_clube; else semParcelamentoClube">
+                {{objectHandleService.formaPagamentoCartaoCondor(ofertas.qtd_clube, ofertas.parcela_clube)}}
+              </div>
+              <ng-template #semParcelamentoClube >
+                <div class="forma-pagamento-regular" *ngIf ="ofertas.qtd_regular; else semParcelamento">
+                  {{objectHandleService.formaPagamentoRegular(ofertas.qtd_regular, ofertas.parcela_regular)}}
+                </div>
+                <ng-template #semParcelamento>
+                  <div style="height: 40px"></div>
+                </ng-template>
+              </ng-template>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <div class="row justify-content-center mb-3">
+              <div class="col-10 col-md-5">
+                <a href="https://www.sitemercado.com.br/condor/" target="_blank" class="btn btn-primary w-100"
+                  (click)="clickAction(ofertas.produtos.dsc_produto, 'comprar_online')">Comprar online</a>
+              </div>
+              <div class="col-10 col-md-5">
+                <a href="https://www.google.com.br/maps/search/condor/@-25.4944693,-49.2918657,12z/data=!3m1!4b1" target="_blank" class="btn btn-info w-100"
+                (click)="clickAction(ofertas.produtos.dsc_produto, 'comprar_loja')">Comprar na loja</a>
+              </div>
+            </div>
+            <p class="mb-0">
+              <small>
+                Oferta Válida de {{ ofertas.start | date: "dd/MM/yyyy" }} a {{ ofertas.end | date: "dd/MM/yyyy" }}
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button color="danger" type="button" mdbBtn class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

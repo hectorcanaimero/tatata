@@ -1,0 +1,46 @@
+<section id="prologo" class="py-5" *ngIf="item.prologo.status">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-5 align-self-center mb-3">
+        <div class="text lead" [innerHtml]="item.prologo.text"></div>
+      </div>
+      <div class="col-md-4">
+        <img [src]="item.prologo.img" class="img-fluid" alt="Instituto Joanir Zonta">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="como-ajudar" class="py-5" *ngIf="item.comoajudar.status">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-3 align-self-center">
+        <img [src]="item.comoajudar.img" class="img-fluid" alt="Collage de fotos">
+      </div>
+      <div class="col-md-6 align-self-center">
+        <h2 class="titulo">{{ item.comoajudar.titulo }}</h2>
+        <div class="row mb-2 mb-xl-3" *ngFor="let raw of item.comoajudar.items">
+          <div class="col-3 align-self-center">
+            <img [src]="raw.icon" class="img-fluid" alt="">
+          </div>
+          <div class="col-9">
+            <div class="raw-text" [innerHtml]="raw.text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="como-funciona" *ngIf="item.comofunciona.status"
+  [ngStyle]="{'background-image': 'url(' + item.comofunciona.background + ')'}">
+  <div class="container">
+    <div class="flex-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-7">
+          <h2 class="titulo">{{ item.comofunciona.titulo }}</h2>
+          <div class="text" [innerHtml]="item.comofunciona.text"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

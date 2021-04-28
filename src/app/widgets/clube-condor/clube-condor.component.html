@@ -1,0 +1,26 @@
+<section id="clube-condor" class="py-4" *ngIf="item.status">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-9 col-md-3 mb-4">
+        <a [href]="item.logo.url" target="_blank" rel="noopener noreferrer">
+          <img [src]="item.logo.img" class="img-fluid mx-auto d-block" [alt]="item.logo.alt">
+        </a>
+      </div>
+      <div class="col-md-6 mb-4 mb-md-0 align-self-center">
+        <h3 class="app-titulo"><span [innerHTML]="item.titulo"></span></h3>
+        <div class="text-center">
+          <a class="btn btn-condor-secondary rounded-pill z-depth-2" [href]="item.buttom.url" target="_blank">
+            <h5 class="mb-0">{{ item.buttom.titulo }}</h5>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4 align-self-end">
+        <div *ngFor="let buttom of item.download" class="text-center">
+          <a [href]="buttom.url" target="_blank">
+            <img [src]="buttom.img" class="img-fluid mb-3" [alt]="buttom.alt">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

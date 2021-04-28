@@ -1,0 +1,315 @@
+.card-ofertas{
+  color: grey;
+  font-weight: 400;
+  min-height: 360px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0.75px 0.75px 0.75px 0.75px rgba(150,150,150,0.25);
+  .imagens{
+    flex: row;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    .img-produto{
+      width: auto;
+      height: 150px;
+      padding: 10px;
+      margin: auto 0;
+    }
+    .selo-dinheiro-de-volta {
+      top: 10px;
+      left: 20px;
+      margin: auto;
+      max-width: 50px;
+      position: absolute;
+    }
+    .selo_clube{
+      right: 20px;
+      bottom: 5px;
+      max-width: 60px;
+      position: absolute;
+    }
+  }
+  .descricao-produto {
+    height: 50px;
+    margin: 12px 3px;
+    min-height: 40px;
+    p{
+      font-size: 14px;
+      text-align: start;
+      font-family: Montserrat, sans-serif;
+
+    }
+  }
+
+  .preco-regular {
+    p{
+      font-size: 15px;
+      margin: 0px 5px;
+      font-weight: bold;
+      text-align: center;
+      span{
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 3px;
+      }
+    }
+  }
+  .preco-clube {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-oferta-secondary);
+    span{
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 3px;
+    }
+  }
+
+  .forma-pagamento-clube {
+    display: flex;
+    text-align: start;
+    color: var(--ion-color-condor-tertiary);
+    font-size: 10px;
+    margin: 0 5px;
+    font-weight: bold;
+    height: 40px;
+  }
+  .forma-pagamento-regular {
+    display: flex;
+    text-align: start;
+    font-size: 10px;
+    margin: 0 5px;
+    font-weight: bold;
+    height: 40px;
+  }
+
+
+  .bottom{
+    text-align: center;
+    p{
+      padding: .25rem;
+      font-size: .9rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .card-ofertas{
+    .descricao-produto {
+      margin: 12px 6px;
+      p{
+        font-size: 16px;
+        line-height: 17px;
+      }
+    }
+    .preco-regular {
+      p{
+        font-size: 17px;
+        span{
+          font-size: 13px;
+        }
+      }
+    }
+    .preco-clube {
+      font-size: 17px;
+      span{
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+
+// .wrapper {
+//   padding: 20px;
+//   max-width: 400px;
+//   margin: 50px auto;
+// }
+// .imagens-card {
+
+//   position: relative;
+// }
+
+// .clube-condor {
+//   position: absolute;
+//   left: 0;
+// }
+// ion-button {
+//   --border-radius: 15px;
+//   --font-weight: bold;
+//   width: 150px;
+//   height: 30px;
+// }
+// .preco-clube-embalagem{
+//   margin: 0;
+//   padding: 0  0 0 15px;
+//   display: block;
+//   justify-content: flex-end !important;
+//   align-items: center !important;
+// }
+// @media (min-width: 320px) {
+//   .preco-regular {
+//     font-size: 12px;
+//     font-weight: bold;
+//     margin: 5px 5px;
+
+//   }
+//   .preco-clube {
+//     color: var(--ion-color-condor-tertiary);
+//     font-size: 12px;
+//     font-weight: bold;
+//     justify-content: flex-end !important;
+//     align-items: center !important;
+//     padding: 0 0 0 5px  !important;
+//   }
+//   .card-ofertas-body{
+//     ion-button {
+//       color: var(--ion-color-primary);
+//       --background: white;
+//       --background-activated-opacity: 0.1;
+//     }
+//     color: grey;
+//     background: white;
+//     border-radius: 10px;
+//     margin: 20px 0;
+//     width: 145px;
+//     height: 400px;
+//     font-weight: 400;
+//     box-shadow: 0.75px 0.75px 0.75px 0.75px rgba(150,150,150,0.25);
+
+//   }
+// }
+
+// @media (min-width: 360px) {
+//   .preco-regular {
+//     font-size: 15px;
+//     font-weight: bold;
+//     margin: 5px 5px;
+
+//   }
+//   .preco-clube {
+//     color: var(--ion-color-condor-tertiary);
+//     font-size: 15px;
+//     font-weight: bold;
+//     justify-content: flex-end !important;
+//     align-items: center !important;
+//     padding: 0 0 0 5px  !important;
+//   }
+//   .card-ofertas-body{
+//     ion-button {
+//       color: var(--ion-color-primary);
+//       --background: white;
+//       --background-activated-opacity: 0.1;
+//     }
+//     color: grey;
+//     background: white;
+//     border-radius: 10px;
+//     margin: 20px 0;
+//     width: 165px;
+//     height: 400px;
+//     font-weight: 400;
+//     box-shadow: 0.75px 0.75px 0.75px 0.75px rgba(150,150,150,0.25);
+
+//   }
+// }
+// @media (min-width: 375px) {
+//   .preco-regular {
+//     font-size: 15px;
+//     font-weight: bold;
+//     margin: 5px 5px;
+
+//   }
+//   .preco-clube {
+//     color: var(--ion-color-condor-tertiary);
+//     font-size: 15px;
+//     font-weight: bold;
+//     justify-content: flex-end !important;
+//     align-items: center !important;
+//     padding: 0 0 0 5px  !important;
+//   }
+//   .card-ofertas-body{
+//     ion-button {
+//       color: var(--ion-color-primary);
+//       --background: white;
+//       --background-activated-opacity: 0.1;
+//     }
+//     color: grey;
+//     background: white;
+//     border-radius: 10px;
+//     margin: 20px 0;
+//     width: 172.5px;
+//     height: 400px;
+//     font-weight: 400;
+//     box-shadow: 0.75px 0.75px 0.75px 0.75px rgba(150,150,150,0.25);
+
+//   }
+// }
+// @media (min-width: 400px) {
+//   .preco-regular {
+//     font-size: 15px;
+//     font-weight: bold;
+//     margin: 5px 5px;
+
+//   }
+//   .preco-clube {
+//     color: var(--ion-color-condor-tertiary);
+//     font-size: 15px;
+//     font-weight: bold;
+//     justify-content: flex-end !important;
+//     align-items: center !important;
+//     padding: 0 0 0 5px  !important;
+//   }
+//   .card-ofertas-body{
+//     ion-button {
+//       color: var(--ion-color-primary);
+//       --background: white;
+//       --background-activated-opacity: 0.1;
+//     }
+//     color: grey;
+//     background: white;
+//     border-radius: 10px;
+//     margin: 20px 0;
+//     width: 190px;
+//     height: 400px;
+//     font-weight: 400;
+//     box-shadow: 0.75px 0.75px 0.75px 0.75px rgba(150,150,150,0.25);
+
+//   }
+// }
+// @media (min-width: 700px) {
+//   .preco-regular {
+//     font-size: 15px;
+//     font-weight: bold;
+//     margin: 5px 5px;
+
+//   }
+//   .preco-clube {
+//     color: var(--ion-color-condor-tertiary);
+//     font-size: 15px;
+//     font-weight: bold;
+//     justify-content: flex-end !important;
+//     align-items: center !important;
+//     padding: 0 0 0 5px  !important;
+//   }
+//   .card-ofertas-body{
+//     ion-button {
+//       color: var(--ion-color-primary);
+//       --background: white;
+//       --background-activated-opacity: 0.1;
+//     }
+//     color: grey;
+//     background: white;
+//     border-radius: 10px;
+//     margin: 20px 0;
+//     width: 225px;
+//     height: 400px;
+//     font-weight: 400;
+//     box-shadow: 0.75px 0.75px 0.75px 0.75px rgba(150,150,150,0.25);
+
+//   }
+// }
+
+
