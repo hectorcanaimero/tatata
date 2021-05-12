@@ -1,10 +1,8 @@
-<main *ngIf="(items$ | async) as item"; else semData>
-  <app-header [item]="item.header" [menu]="item.menu"></app-header>
-  <app-agenda [items]="item.agenda"></app-agenda>
-  <app-parallax [items]="item.parallax"></app-parallax>
-  <app-duvidas [items]="item.duvidas"></app-duvidas>
-  <app-footer [item]="item.footer"></app-footer>
+<main *ngIf="(items$ | async) as item">
+  <app-header [item]="item.data.header" [menu]="item.data.menu"></app-header>
+  <app-banner [items]="item.data.banner"></app-banner>
+  <app-agenda [items]="item.data.agenda"></app-agenda>
+  <app-parallax [items]="item.data.parallax"></app-parallax>
+  <app-duvidas [items]="item.textRich[0]"></app-duvidas>
+  <app-footer [item]="item.data.footer"></app-footer>
 </main>
-<ng-template #semData>
-
-</ng-template>

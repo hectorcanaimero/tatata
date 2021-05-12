@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-agenda',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agenda.component.scss']
 })
 export class AgendaComponent implements OnInit {
+
+
+
+  @Input() items: any = [];
 
   constructor() { }
 

@@ -7,7 +7,8 @@
     "build": "ng build --prod --aot --sourceMap --output-hashing=all --base-href ./",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +31,7 @@
     "chart.js": "^2.7.2",
     "classlist.js": "^1.1.20150312",
     "hammerjs": "~2.0.8",
+    "markdown-it": "^12.0.6",
     "ngx-pagination": "^5.0.0",
     "ngx-parallax": "^4.0.0",
     "rxjs": "~6.5.4",

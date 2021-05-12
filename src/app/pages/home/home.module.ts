@@ -5,28 +5,26 @@ import { RouterModule } from '@angular/router';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
-import { HomeComponent } from './home.component';
-
-import { BlogModule } from '../../widgets/blog/blog.module';
-import { MenuModule } from '../../widgets/menu/menu.module';
+import { BannerModule } from 'src/app/widgets/banner/banner.module';
+import { AgendaModule } from 'src/app/widgets/agenda/agenda.module';
 import { FooterModule } from 'src/app/widgets/footer/footer.module';
 import { HeaderModule } from 'src/app/widgets/header/header.module';
-import { OfertasModule } from '../../widgets/ofertas/ofertas.module';
-import { CompreOnlineModule } from '../../widgets/compre-online/compre-online.module';
-import { ComoFuncionaModule } from '../../widgets/como-funciona/como-funciona.module';
+import { DuvidasModule } from 'src/app/widgets/duvidas/duvidas.module';
+import { ParallaxModule } from 'src/app/widgets/parallax/parallax.module';
 
+import { HomeComponent } from './home.component';
 const app: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
   declarations: [HomeComponent],
   imports: [
-  BlogModule,
     CommonModule,
     FooterModule,
     HeaderModule,
-    OfertasModule,
-    ComoFuncionaModule,
-    CompreOnlineModule,
+    AgendaModule,
+    BannerModule,
+    DuvidasModule,
+    ParallaxModule,
     MDBBootstrapModule,
     RouterModule.forChild(app),
   ]
