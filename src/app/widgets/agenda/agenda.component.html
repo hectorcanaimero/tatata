@@ -4,8 +4,8 @@
       <div class="col-md-7 col-lg-5 align-self-center mb-4">
         <img [src]="items.left.image" class="img-fluid wow fadeIn" [alt]="items.left.alt">
         <div class="text wow fadeIn" data-wow-delay="0.6s">
-          <ul>
-            <li *ngFor="let texto of items.left.texto">{{ texto }}</li>
+          <ul class="listOut">
+            <li *ngFor="let texto of items.left.texto" [innerHtml]="texto"></li>
           </ul>
           <h5 class="mb-0 text-center" [innerHtml]="items.left.button"></h5>
         </div>

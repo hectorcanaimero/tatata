@@ -2,8 +2,8 @@
 <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav d-lg-none d-xl-block"
 [containerInside]="true" *ngIf="item.status">
   <mdb-navbar-brand>
-    <a class="logo navbar-brand" href="{{ item.url }}" target="_blank">
-      <img [src]="item.img" class="img-fluid logo" alt="{{ item.alt }}">
+    <a class="logo navbar-brand" href="{{ item.logo.url }}" target="_blank">
+      <img [src]="item.logo.img" class="img-fluid logo" alt="{{ item.logo.alt }}">
     </a>
   </mdb-navbar-brand>
     <links>
@@ -23,8 +23,8 @@
 <mdb-navbar SideClass="navbar navbar-expand-xl navbar-dark scrolling-navbar ie-nav intro-fixed-nav d-xl-none"
 [containerInside]="true" *ngIf="item.status">
   <mdb-navbar-brand>
-    <a class="logo navbar-brand" href="{{ item.url }}" target="_blank">
-      <img [src]="item.img" class="img-fluid logo" alt="{{ item.alt }}">
+    <a class="logo navbar-brand" href="{{ item.logo.url }}" target="_blank">
+      <img [src]="item.logo.img" class="img-fluid logo" alt="{{ item.logo.alt }}">
     </a>
   </mdb-navbar-brand>
     <links>
