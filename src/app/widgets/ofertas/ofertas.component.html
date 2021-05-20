@@ -1,18 +1,10 @@
-<section id="ofertas-chocolate" class="py-5"  *ngIf="item.status">
+<section id="ofertas" class="py-5"  *ngIf="item.status">
   <div id="ofertas" class="ofertas" *ngIf="(loja$ | async ) as loja">
     <div class="container position-relative">
-      <div class="row justify-content-center" *ngIf="item.promo.status">
-        <div class="col-md-6 align-self-center">
-          <h1 class="title mt-4" [innerHTML]="item.promo.titulo"></h1>
-        </div>
-        <div class="col-md-5">
-          <img [src]="item.promo.source[0]" class="img-fluid mt-3 mt-md-4" alt="">
-        </div>
-      </div>
       <div class="row justify-content-around">
         <div class="col-12">
-          <h1 class="titulo">{{ item.titulo }}</h1>
-          <h2 class="subtitulo mb-3 mt-5"><span>{{ loja.nome }}</span></h2>
+          <h1 class="titulo" [innerHtml]="item.titulo"></h1>
+          <h2 class="subtitulo caveat">{{ loja.nome }}</h2>
         </div>
         <div class="col-md-6 col-lg-5">
           <select class="browser-default custom-select select mb-3 form-control" (change)="onLojas($event)">

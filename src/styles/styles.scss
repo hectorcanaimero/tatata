@@ -1,20 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Importing Bootstrap SCSS file. */
-
-
+@import "~swiper/swiper";
+@import "~swiper/components/pagination/pagination";
 
 body {
+  background: url('../assets/images/bg_background.png') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
+
+.caveat { font-family: 'Caveat', cursive !important; }
+.text-primary { color: var(--color-primary) !important; }
+.text-secondary { color: var(--color-secondary) !important; }
+
+
 
 
 .btn-condor {
   color: #fff !important;
   font-weight: 600;
-  background-color: var(--color-secondary) !important;
+  background-color: var(--color-primary) !important;
 }
 
 
@@ -35,12 +38,13 @@ body {
 
 // Navbar
 .navbar {
-  background: var(--color-primary);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  background: rgba($color: #651511, $alpha: 1);
+  padding: .25rem 1rem !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0) !important;
   ul{
     li{
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: left;
       a { color: #fff !important; }
     }
@@ -70,8 +74,9 @@ body {
     ul{
       li{
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
+        text-transform: uppercase;
         margin: 0 10px !important;
         a { color: #fff !important; }
       }
@@ -100,13 +105,16 @@ body {
     display: block;
     border-radius: 0;
     font-weight: 600;
-    color: var(--color-secondary) !important;
+    color: var(--color-primary) !important;
     padding: 0.1875rem 0.625rem;
+  }
+  .disabled {
+    color: var(--color-text-muted) !important;
   }
   .current {
     cursor: default;
-    color: #444 !important;
-    border-radius: 5px;
+    color: #fafafa !important;
+    border-radius: 25px;
     padding: 0.1875rem 0.625rem;
     background: var(--color-primary) !important;
     text-shadow: 4px 4px 4px rgba($color: #000000, $alpha: .35);
@@ -175,5 +183,179 @@ body {
 
   .texto-parallax {
     font-size: 1.7rem;
+  }
+}
+
+
+#como-funciona {
+  .titulo {
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    span {
+      font-weight: 500 !important;
+      display: block;
+      letter-spacing: 0px;
+      font-size: 1.4rem !important;
+    }
+  }
+}
+
+
+#padrao-qualidade {
+  .titulo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    span {
+      display: block;
+      letter-spacing: 0px;
+      text-transform: initial;
+      font-size: 2.5rem !important;
+    }
+  }
+}
+
+#cortes {
+  .titulo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    span {
+      text-transform: initial;
+      display: block;
+      letter-spacing: 0px;
+      font-size: 3.5rem !important;
+    }
+  }
+}
+
+#blog {
+  .titulo {
+    color: var(--color-text-muted) !important;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    span {
+      display: block;
+      letter-spacing: 0px;
+      text-transform: initial;
+      font-size: 3.5rem !important;
+    }
+  }
+}
+
+#ofertas {
+  .titulo {
+    color: var(--color-text-muted) !important;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    span {
+      display: block;
+      letter-spacing: 0px;
+      text-transform: initial;
+      font-size: 3.5rem !important;
+    }
+  }
+}
+
+
+@media(min-width: 768px) {
+  #como-funciona {
+    .titulo {
+      font-size: 2rem;
+      span { font-size: 2.5rem !important; }
+    }
+  }
+  #padrao-qualidade {
+    .titulo {
+      font-size: 1.8rem;
+      span { font-size: 4rem !important; }
+    }
+  }
+
+  #cortes {
+    .titulo {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      span {
+        text-transform: initial;
+        display: block;
+        letter-spacing: 0px;
+        font-size: 3.5rem !important;
+      }
+    }
+  }
+}
+
+
+@media(min-width: 1200px) {
+  #como-funciona {
+    .titulo {
+      font-size: 1.2rem;
+      span {
+        display: inline;
+        font-size: 2.5rem !important;
+      }
+    }
+  }
+
+  #ofertas {
+    .titulo {
+      font-size: 1.5rem;
+      span {
+        display: inline;
+        font-size: 4.5rem !important;
+      }
+    }
+  }
+
+  #padrao-qualidade {
+    .titulo {
+      color: #fff;
+      letter-spacing: 3px;
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-align: center;
+      span {
+        display: block;
+        letter-spacing: 0px;
+        font-size: 3rem !important;
+      }
+    }
+  }
+
+  #cortes {
+    .titulo {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      span {
+        text-transform: initial;
+        display: block;
+        letter-spacing: 0px;
+        font-size: 3.5rem !important;
+      }
+    }
   }
 }

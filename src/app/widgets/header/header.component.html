@@ -1,22 +1,47 @@
-<header id="header" *ngIf="item.status" [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
+<header id="header" class="d-none d-md-block" *ngIf="item.status" [ngStyle]="{'background-image': 'url(' + item.bg.desktop + ')'}">
   <app-menu [item]="menu"></app-menu>
   <div class="flex-center">
     <div class="container">
       <div class="row justify-content-around">
-        <div class="col-10 col-md-6 col-lg-5 align-self-center text-center">
+        <div class="col-md-5 col-lg-4 text-center">
           <a href="">
             <img [src]="item.left.image" class="img-fluid wow fadeIn" [alt]="item.left.alt">
           </a>
         </div>
-        <div class="col-10 col-md-6 col-lg-5 align-self-center text-center">
-          <a [href]="item.right.url" target="_blank">
-            <img [src]="item.right.image" class="img-fluid mb-3 wow fadeIn" data-wow-delay="0.4s" [alt]="item.right.alt">
-          </a>
-          <h4 class="btn wow fadeIn" data-wow-delay="0.7s">
-            <a [href]="item.right.url" target="_blank">{{ item.right.alt }}</a>
-          </h4>
+        <div class="col-md-6 col-lg-5 col-xl-4 align-self-center text-center">
+          <h1 class="caveat titulo" [innerHtml]="item.right.titulo"></h1>
+          <p class="subtitulo" [innerHtml]="item.right.subtitulo"></p>
+          <p class="content" [innerHtml]="item.right.content"></p>
         </div>
       </div>
     </div>
   </div>
 </header>
+<!-- Mobile -->
+<header id="header" class="d-md-none" *ngIf="item.status" [ngStyle]="{'background-image': 'url(' + item.bg.mobile + ')'}">
+  <app-menu [item]="menu"></app-menu>
+  <div class="container mt-3">
+    <div class="row justify-content-around">
+      <div class="col-9 text-center">
+        <a href="">
+          <img [src]="item.left.image" class="img-fluid mb-4" [alt]="item.left.alt">
+        </a>
+      </div>
+      <div class="col-12 align-self-center text-center">
+        <h1 class="caveat titulo" [innerHtml]="item.right.titulo"></h1>
+        <p class="subtitulo mb-4" [innerHtml]="item.right.subtitulo"></p>
+        <p class="content" [innerHtml]="item.right.content"></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="container-fluid" *ngIf="item.status">
+  <div class="row justify-content-center">
+    <div class="col-md-9 col-lg-6 my-3 my-md-5">
+      <app-youtube [id]="item.youtube"></app-youtube>
+    </div>
+  </div>
+</div>

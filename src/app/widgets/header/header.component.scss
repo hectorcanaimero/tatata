@@ -1,26 +1,76 @@
 header{
   background-size: cover;
-  height: 130vh;
+  height: 120vh;
   background-position: center center;
   background-repeat: no-repeat;
-  .flex-center {
-    display: flex;
-    flex: row;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
+  .titulo {
+    line-height: 1;
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 4px rgba($color: #000000, $alpha: .70);
+  }
+  .subtitulo {
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  .content {
+    color: #fff;
+    font-size: .8rem;
+    text-align: justify;
   }
 }
 
-.btn {
-  background-color: var(--color-secondary);
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding: .75rem 1.5rem;
-  border-radius: 25px;
-  a{
-    color: var(--color-primary);
+@media(min-width: 768px) {
+  header{
+    height: 55vh;
+    .flex-center {
+      flex: row;
+      display: flex;
+      height: 40vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .titulo {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .subtitulo {
+      font-size: 1rem;
+    }
+    .content {
+      font-size: .9rem;
+      text-shadow: 2px 2px 3px rgba($color: #000000, $alpha: .90);
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  header{
+    height: 100vh;
+    .flex-center {
+      flex: row;
+      display: flex;
+      height: 80vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .titulo {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .subtitulo {
+      font-size: 1rem;
+    }
+    .content {
+      font-size: .9rem;
+      text-shadow: 2px 2px 3px rgba($color: #000000, $alpha: .90);
+    }
   }
 }
 
@@ -31,39 +81,5 @@ header{
     -webkit-box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.75);
     box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.75);
-  }
-}
-
-
-@media(min-width: 768px) {
-  header{
-    height: 60vh;
-    .flex-center{
-      height: 55vh;
-    }
-    .lead {
-      font-size: 2.5rem;
-    }
-  }
-}
-
-@media(min-width: 1024px) {
-  header{
-    .lead {
-      font-size: 4rem;
-    }
-  }
-}
-
-
-@media(min-width: 1200px) {
-  header{
-    height: 100vh;
-    .flex-center {
-      height: 95vh;
-    }
-  }
-  .youtube{
-    margin-top: -5.5rem;
   }
 }

@@ -1,6 +1,6 @@
-import { Observable } from 'rxjs';
-import { DataService } from './../../shared/services/data.service';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { DataService } from 'src/app/shared/services/data.service';
 
 @Component({
   selector: 'app-home',

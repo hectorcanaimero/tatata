@@ -1,162 +1,187 @@
 [
   {
-    "app": {
-      "status": true,
-      "titulo": "Baixe o aplicativo<br>do Clube Condor",
-      "buttom": {
-        "titulo": "Faça seu cadastro",
-        "url": "https://clubecondor.com"
-      },
-      "logo": {
-        "img": "./assets/images/clube.png",
-        "alt": "Participe e economize ainda mais.",
-        "url": "https://clubecondor.com"
-      },
-      "download": [
-        {
-          "img": "./assets/images/app_store.png",
-          "alt": "Baixar na App Store",
-          "url": "https://apps.apple.com/br/app/clube-condor/id1453391822"
-        },
-        {
-          "img": "./assets/images/play_store.png",
-          "alt": "Baixar na Play Store",
-          "url": "https://play.google.com/store/apps/details?id=br.com.gsgroup.zoombox.condorsupermercados"
-        }
-      ]
-    },
-    "ofertas": {
-      "status": true,
-      "titulo": "Ofertas do mês da mulher",
-      "desktop": "./assets/images/title-desktop.png",
-      "mobile": "./assets/images/title-mobile.png",
-      "textOfertas": "./assets/images/text-ofertas.png",
-      "collection": {
-        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=313083",
-        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=313083",
-        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=313083"
-      },
-      "promo": {
-        "status": false,
-        "titulo": "<span>todos os </span>ovos de páscoa, chocolates, colombas, azeites e bacalhaus",
-        "source": [
-          "./assets/images/parcelamento.png"
-        ]
-      },
-      "filtro": [
-        {
-          "value": 1,
-          "nome": "Dinheiro de Volta"
-        },
-        {
-          "value": 2,
-          "nome": "Clube Condor"
-        },
-        {
-          "value": 3,
-          "nome": "Ofertas com Pack"
-        },
-        {
-          "value": 4,
-          "nome": "Preço mais baixo"
-        }
-      ]
-    },
-    "blog": {
-      "status": true,
-      "titulo": "Blog Condor",
-      "buttom": "Ver tudo",
-      "link": "http://www.condor.com.br/blog",
-      "tag": 50,
-      "cant": 3,
-      "col": 4,
-      "legal": ""
-    },
-    "header": {
-      "status": true,
-      "top": {
-        "left": {
-          "class": "col-12 col-md-7 col-lg-6",
-          "logo": "./assets/images/kv.png"
-        },
-        "right": {
-          "class": "col-12 col-md-5 col-lg-6 align-self-center",
-          "text": "Se conheça, se ame, se cuide!",
-          "buttom": {
-            "url": "#ofertas",
-            "texto": "VER OFERTAS"
-          }
-        }
-      },
-      "middle": {
-        "left": {
-          "status": true,
-          "class": "col-12 col-md-7 col-lg-6 align-self-center",
-          "youtube": "lsRsuOKLy50"
-        },
-        "right": {
-          "class": "col-12 col-md-5 col-lg-6",
-          "image": "./assets/images/promo.png"
-        }
-      },
-
-      "image": "./assets/images/familia.png"
-    },
-    "participar": {
-      "status": true,
-      "titulo": "Como participar",
-      "source": ["./assets/images/participar-1.png", "./assets/images/participar-2.png"]
-    },
-    "delivery": {
-      "status": true,
-      "link": "https://www.condor.com.br/delivery/index.html",
-      "text": "Compre on-line",
-      "icon": "./assets/images/market.svg"
-    },
-    "condoremcasa": {
-      "status": true,
-      "image": "./assets/images/emcasa.png",
-      "text": "leve a páscoa condor para sua casa",
-      "btn": "./assets/images/btn-casa.png",
-      "link": "https://www.condor.com.br/delivery"
-    },
     "footer": {
       "status": true,
-      "title": "@Condor 2021. Todos os direitos reservados.",
-      "fb": "https://www.facebook.com/RedeCondor/",
-      "ig": "https://www.instagram.com/redecondor/",
-      "tw": "https://twitter.com/RedeCondor",
-      "yt": "https://www.youtube.com/user/redecondor"
+      "titulo": "© Condor 2021. Todos os direitos reservados.",
+      "media": [
+        {
+          "icon": "fab fa-facebook-f",
+          "url": "https://www.facebook.com/RedeCondor/"
+        },
+        {
+          "icon": "fab fa-instagram",
+          "url": "https://www.instagram.com/redecondor/"
+        },
+        {
+          "icon": "fab fa-twitter",
+          "url": "https://twitter.com/RedeCondor"
+        },
+        {
+          "icon": "fab fa-youtube",
+          "url": "https://www.youtube.com/user/redecondor"
+        }
+      ]
     },
     "menu": {
       "status": true,
-      "img": "./assets/images/logo.png",
-      "alt": "Rede Condor",
-      "url": "https://www.condor.com.br",
+      "logo": {
+        "alt": "Rede Condor",
+        "img": "./assets/images/logo.png",
+        "url": "https://www.condor.com.br"
+      },
       "source": [
         {
           "status": true,
-          "url": "#ofertas",
-          "name": "Ofertas",
+          "url": "#como-funciona",
+          "name": "como funciona",
           "external": false
         },
         {
           "status": true,
-          "url": "#como-participar",
-          "name": "Como Participar",
+          "url": "#padrao-qualidade",
+          "name": "padrão qualidade",
+          "external": false
+        },
+        {
+          "status": true,
+          "url": "#cortes",
+          "name": "armazenamento",
           "external": false
         },
         {
           "status": true,
           "url": "#blog",
-          "name": "Blog",
+          "name": "dicas",
           "external": false
         },
         {
           "status": true,
-          "url": "https://www.condor.com.br/dinheiro-de-volta",
-          "name": "Dinheiro de volta",
-          "external": true
+          "url": "#ofertas",
+          "name": "ofertas",
+          "external": false
+        }
+      ]
+    },
+    "header": {
+      "status": true,
+      "bg": {
+        "mobile": "./assets/images/bg_header_mobile.png",
+        "desktop": "./assets/images/bg_header.png"
+      },
+      "youtube": "Gr7YMpbOyUk",
+      "left": {
+        "image": "./assets/images/kv.png",
+        "alt": "Carnes de qualidade"
+      },
+      "right": {
+        "titulo": "Novo Entreposto de Carnes Condor",
+        "subtitulo": "carnes de qualidade condor. é novidade. é qualidade. <span class='text-secondary'>é para você.</span>",
+        "content": "O Condor está sempre buscando o melhor para seus clientes. E quando o assunto é carnes e frios, temos o orgulho em apresentar o nosso Novo Entreposto de Carnes, agora com a estrutura mais moderna do Brasil. Carnes e frios com padronização nos cortes, segurança, embalados Entreposto e, é claro, com muito mais sabor."
+      }
+    },
+    "ofertas": {
+      "status": true,
+      "titulo": "aproveite essas <span class='caveat text-primary'>Ofertas</span>",
+      "collection": {
+        "campanha": 320185,
+        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=320185",
+        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=320185",
+        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=320185"
+      },
+      "filtro": [
+        { "value": 1, "nome": "Dinheiro de Volta" },
+        { "value": 2, "nome": "Clube Condor" },
+        { "value": 3, "nome": "Ofertas com Pack" },
+        { "value": 4, "nome": "Preço mais baixo" }
+      ]
+    },
+    "comoFunciona": {
+      "status": true,
+      "titulo": "COMO FUNCIONA O <span class='caveat text-secondary'>Entreposto de Carnes e Frios Condor?</span>",
+      "infografico": {
+        "mobile": "./assets/images/infografico_mobile.png",
+        "desktop": "./assets/images/infografico.png"
+      }
+    },
+    "padraoQualidade": {
+      "status": true,
+      "fundo": {
+        "mobile": "./assets/images/fundo-left-mobile.png",
+        "desktop": "./assets/images/fundo-left.png"
+      },
+      "background": "./assets/images/bg_padrao.png",
+      "titulo": "padrão de qualidade <span class='caveat text-secondary'>mundial em carnes.</span>",
+      "content": "Qualidade é coisa séria e, por isso, o Condor foi buscar na Alemanha a melhor tecnologia do mundo no segmento para cortes de carnes e frios.<br>O resultado é carnes fresquinhas, de qualidade, com conservação 100% natural e a economia que você só encontra no Condor.",
+      "icon": {
+        "titulo": "vantagens:",
+        "source": [
+          {
+            "icon": "./assets/images/icone-1.png",
+            "text": "padronização dos cortes"
+          },
+          {
+            "icon": "./assets/images/icone-2.png",
+            "text": "maior segurança nos processos"
+          },
+          {
+            "icon": "./assets/images/icone-3.png",
+            "text": "variedade de carnes"
+          },
+          {
+            "icon": "./assets/images/icone-4.png",
+            "text": "embalado em  atmosfera controlada"
+          },
+          {
+            "icon": "./assets/images/icone-5.png",
+            "text": "bandeja vedada e mais higiênica"
+          }
+        ]
+      }
+    },
+    "blog": {
+      "status": true,
+      "config": {
+        "col": 4,
+        "cant": 3,
+        "tag": 1168
+      },
+      "buttom": {
+        "text": "Ver tudo",
+        "url": "https://www.condor.com.br/blog"
+      },
+      "titulo": "receitas <span class='caveat text-primary'>coma bem.</span>",
+      "content": "Aqui você encontra as melhores receitas de pratos com carnes e fatiados, para deixar sua mesa com sabores incríveis. Escolha e aproveite!"
+    },
+    "cortes": {
+      "status": true,
+      "titulo": "armazenamento com a qualidade e a segurança <span class='caveat text-secondary'>que sua família merece.</span>",
+      "subtitulo": "confira aqui alguns<br>cortes do setor.",
+      "content": "A qualidade no nosso Entreposto vai além das carnes para o dia a dia e churrascos. Toda a parte de frios, sejam salames, queijos ou embutidos, é preparada no Entreposto com os mesmos cuidados, muita tecnologia e armazenamento em embalagens que mantêm a cor, sabor, textura e as propriedades nutritivas, sem precisar de nenhum aditivo químico.",
+      "source": [
+        {
+          "name": "picanha",
+          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
+          "image": "./assets/images/carne-1.png"
+        },
+        {
+          "name": "angus",
+          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
+          "image": "./assets/images/carne-2.png"
+        },
+        {
+          "name": "contrafile",
+          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
+          "image": "./assets/images/carne-3.png"
+        },
+        {
+          "name": "carne moida",
+          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
+          "image": "./assets/images/carne-2.png"
+        },
+        {
+          "name": "mignon",
+          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
+          "image": "./assets/images/carne-3.png"
         }
       ]
     }

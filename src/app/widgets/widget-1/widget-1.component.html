@@ -1,0 +1,11 @@
+<section id="como-funciona" class="py-4" *ngIf="item.status">
+  <div class="container">
+    <h2 class="titulo" [innerHtml]="item.titulo"></h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-10">
+        <img [src]="item.infografico.desktop" [alt]="item.titulo" class="img-fluid d-none d-md-block">
+        <img [src]="item.infografico.mobile" [alt]="item.titulo" class="img-fluid d-md-none">
+      </div>
+    </div>
+  </div>
+</section>

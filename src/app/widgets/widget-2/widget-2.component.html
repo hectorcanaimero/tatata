@@ -1,0 +1,73 @@
+<section id="padrao-qualidade" [ngStyle]="{'background-image': 'url(' + item.background + ')'}" *ngIf="item.status">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-xl-4">
+        <img [src]="item.fundo.desktop" class="img-fluid d-none d-lg-block" alt="">
+        <img [src]="item.fundo.mobile" class="img-fluid d-lg-none mb-3" alt="">
+      </div>
+      <div class="offset-xl-1 col-lg-7 col-xl-5">
+        <div class="icone">
+          <h2 class="titulo" [innerHtml]="item.titulo"></h2>
+          <p class="text" [innerHtml]="item.content"></p>
+          <p class="icone-titulo">{{ item.icon.titulo }}</p>
+        </div>
+        <div class="px-4">
+          <div class="row justify-content-around">
+            <div class="col-md-4 col-lg-2 col-xl-4" *ngFor="let icon of item.icon.source">
+              <div class="icon">
+                <img [src]="icon.icon" class="img-fluid" [alt]="icon.text">
+                <p>{{ icon.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="d-none d-lg-block">
+    <div class="row">
+      <div class="col-lg-4">
+        <img [src]="item.fundo.desktop" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6 offset-xl-1 col-xl-4">
+        <div class="icone">
+          <h2 class="titulo" [innerHtml]="item.titulo"></h2>
+          <p class="content" [innerHtml]="item.content"></p>
+          <p class="icone-titulo">{{ item.icon.titulo }}</p>
+          <div class="row justify-content-around">
+            <div class="col-lg-2" *ngFor="let icon of item.icon.source">
+              <div class="icon">
+                <img [src]="icon.icon" class="img-fluid" [alt]="icon.text">
+                <p>{{ icon.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-lg-none">
+    <img [src]="item.fundo.mobile" class="w-100" alt="">
+    <div class="container">
+      <div class="icone">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h2 class="titulo" [innerHtml]="item.titulo"></h2>
+            <p class="content" [innerHtml]="item.content"></p>
+            <p class="icone-titulo">{{ item.icon.titulo }}</p>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-md-4 mb-3" *ngFor="let icon of item.icon.source">
+              <div class="icon">
+                <img [src]="icon.icon" class="img-fluid" [alt]="icon.text">
+                <p>{{ icon.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>

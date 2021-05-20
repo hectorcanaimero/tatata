@@ -1,0 +1,32 @@
+#blog{
+  background: url('../../../assets/images/bg_light.png') no-repeat center center;
+  background-size: cover;
+  .titulo{
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-secondary);
+  }
+}
+
+@media(min-width: 768px) {
+  #blog {
+    .content {
+      width: 80%;
+      margin: auto;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  #blog {
+    .content {
+      width: 70%;
+      margin: auto;
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+  }
+}

@@ -63,7 +63,8 @@ export class DataService {
 
   /** * Data da LP */
   getDataApi = (): Observable<any> => {
-    return this.http.get<any>(`${ environment.v2 }/landingpage/slug/${ environment.name }`);
+    return this.http.get<any>(`${ environment.v2 }/landingpage/slug/${ environment.name }`)
+      .pipe(map(res => res.data[0]));
   }
 
   getDataFile = (): Observable<any []> => this.http.get<any[]>('./assets/db.json').pipe(map(res => res[0]));
