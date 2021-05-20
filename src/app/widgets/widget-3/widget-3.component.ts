@@ -1,7 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import SwiperCore, { Pagination, Navigation, A11y, Lazy } from "swiper/core";
-
-SwiperCore.use([Pagination, Navigation, A11y, Lazy]);
+import SwiperCore, { EffectFade,   Navigation, Pagination, A11y, Lazy } from "swiper/core";
+SwiperCore.use([EffectFade, Navigation, Pagination, A11y, Lazy]);
 
 @Component({
   selector: 'app-widget-3',
@@ -16,9 +15,19 @@ export class Widget3Component implements OnInit {
 
   options = {
     freemode: true,
-    slidesPerView: 3,
+    loop: true,
+    slidesPerView: 1,
     spaceBetween: 25,
-    navigation: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      360:  { slidesPerView: 1 },
+      768:  { slidesPerView: 2 },
+      1024: { slidesPerView: 3.5 },
+      1200: { slidesPerView: 3.5 },
+    },
   };
 
   constructor() { }

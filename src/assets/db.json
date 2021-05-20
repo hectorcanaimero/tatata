@@ -89,10 +89,22 @@
         "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=320185"
       },
       "filtro": [
-        { "value": 1, "nome": "Dinheiro de Volta" },
-        { "value": 2, "nome": "Clube Condor" },
-        { "value": 3, "nome": "Ofertas com Pack" },
-        { "value": 4, "nome": "Preço mais baixo" }
+        {
+          "value": 1,
+          "nome": "Dinheiro de Volta"
+        },
+        {
+          "value": 2,
+          "nome": "Clube Condor"
+        },
+        {
+          "value": 3,
+          "nome": "Ofertas com Pack"
+        },
+        {
+          "value": 4,
+          "nome": "Preço mais baixo"
+        }
       ]
     },
     "comoFunciona": {
@@ -153,35 +165,35 @@
       "content": "Aqui você encontra as melhores receitas de pratos com carnes e fatiados, para deixar sua mesa com sabores incríveis. Escolha e aproveite!"
     },
     "cortes": {
-      "status": true,
+      "status": false,
       "titulo": "armazenamento com a qualidade e a segurança <span class='caveat text-secondary'>que sua família merece.</span>",
       "subtitulo": "confira aqui alguns<br>cortes do setor.",
       "content": "A qualidade no nosso Entreposto vai além das carnes para o dia a dia e churrascos. Toda a parte de frios, sejam salames, queijos ou embutidos, é preparada no Entreposto com os mesmos cuidados, muita tecnologia e armazenamento em embalagens que mantêm a cor, sabor, textura e as propriedades nutritivas, sem precisar de nenhum aditivo químico.",
       "source": [
         {
-          "name": "picanha",
-          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
+          "name": "picanha bovina",
+          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
           "image": "./assets/images/carne-1.png"
         },
         {
-          "name": "angus",
-          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
+          "name": "peito de frango",
+          "text": "o peito de frango é um corte que se diferencia dos demais por possuir menos pele e um baixo teor de gordura. para prepará-lo existe uma série de possibilidades que com certeza vão agradar o seu paladar.",
           "image": "./assets/images/carne-2.png"
         },
         {
-          "name": "contrafile",
-          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
+          "name": "bisteca",
+          "text": "A bisteca é um corte muito popular no Brasil e uma das principais razões para isso é a sua versatilidade. Ela se estende do quadril à paleta do animal, possui uma camada de gordura que dá a suculência ideal para a carne e você pode escolher se vai prepará-la com ou sem osso.",
           "image": "./assets/images/carne-3.png"
         },
         {
-          "name": "carne moida",
-          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
-          "image": "./assets/images/carne-2.png"
+          "name": "t-bone",
+          "text": "O T-bone recebe este nome devido ao osso em formato de T que divide os dois cortes que fazem parte dele: o contra-filé e o filé mignon. O que mais destaca este corte é a união de diversas qualidades em uma única carne: maciez, suculência e sabor. Experimente esta delícia e surpreenda o seu paladar.",
+          "image": "./assets/images/carne-4.jpg"
         },
         {
-          "name": "mignon",
-          "text": "A picanha bovina é a estrela dos churrascos brasileiros. Sua capa de gordura e ótimo marmoreio conferem extrema maciez, suculência e, é claro, muito sabor. No nosso Entreposto, ela é retirada no local correto do corte, evitando que você leve junto parte do coxão duro.",
-          "image": "./assets/images/carne-3.png"
+          "name": "bife chorizo",
+          "text": "Este presente vindo dos nossos hermanos argentinos é uma ótima escolha para um churrasco inesquecível. As principais características deste corte são a sua maciez e uma grande camada de gordura, concentrada em sua lateral, que dá um sabor único e garante a suculência.",
+          "image": "./assets/images/carne-5.png"
         }
       ]
     }

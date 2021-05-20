@@ -5,19 +5,16 @@
       <div class="col-lg-8">
         <p class="content" [innerHtml]="item.content"></p>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-11">
         <p class="subtitulo" [innerHtml]="item.subtitulo"></p>
-        <swiper [config]="options" [navigation]="true" (slideChange)="onSlideChange($event)">
-          <ng-template *ngFor="let box of item.source; let i = index" swiperSlide>
-            <div class="box" [ngClass]="visual === i ? 'zoom':'mt-5'">
-              <img [src]="box.image" [alt]="box.name" class="img-fluid" [ngClass]="visual !== i ? 'grayscale' : ''">
-              <div class="contenedor" *ngIf="visual === i; else semVisual">
+        <swiper [lazy]="true" [config]="options" [navigation]="true" (slideChange)="onSlideChange($event)">
+          <ng-template swiperSlide *ngFor="let box of item.source">
+            <div class="box">
+              <img [src]="box.image" [alt]="box.name" class="img-fluid">
+              <div class="contenedor">
                 <p class="button"> <span>{{ box.name }}</span> </p>
                 <p class="content">{{ box.text }}</p>
               </div>
-              <ng-template #semVisual>
-                <p class="sem-visual"> <span>{{ box.name }}</span> </p>
-              </ng-template>
             </div>
           </ng-template>
         </swiper>

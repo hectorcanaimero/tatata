@@ -14,14 +14,11 @@ section{
     z-index: -1000 !important;
   }
   .zoom {
-    z-index: 10000000000000000 !important;
     transform: scale(1.12);
     transition: transform .5s;
   }
   .box {
-    .grayscale {
-      filter: grayscale(100%);
-    }
+    .grayscale {}
     position: relative;
     background-color: var(--color-secondary);
     .button {
