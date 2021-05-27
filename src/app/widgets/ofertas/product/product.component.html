@@ -8,6 +8,15 @@
       </div>
     </div>
   </div>
+  <div class="kits">
+    <p>
+      <span class="titulo">{{ kit_titulo }}</span>
+      <span class="content">{{ kit_content  }}</span>
+    </p>
+    <p class="value">
+      {{ (this.kit_value | currency: 'R$':'symbol':'1.2-2':'pt') }}
+    </p>
+  </div>
   <div class="descricao-produto" id="descricao-do-produto">
     <p class="mb-0">{{ofertas.produtos.dsc_produto}}</p>
   </div>
@@ -40,7 +49,7 @@
       {{objectHandleService.formaPagamentoRegular(ofertas.qtd_regular, ofertas.parcela_regular)}}
     </div>
     <ng-template #semParcelamento>
-      <div style="height: 40px"></div>
+      <div style="height: 0px"></div>
     </ng-template>
   </ng-template>
   <div class="bottom">

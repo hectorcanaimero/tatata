@@ -1,124 +1,68 @@
 [
   {
-    "app": {
+    "menu": {
       "status": true,
-      "titulo": "Baixe o aplicativo<br>do Clube Condor",
-      "buttom": {
-        "titulo": "Faça seu cadastro",
-        "url": "https://clubecondor.com"
+      "img": "./assets/images/logo.png",
+      "alt": "Rede Condor",
+      "url": "https://www.condor.com.br",
+      "source": []
+    },
+    "header": {
+      "status": true,
+      "kv": {
+        "brilho": "./assets/images/kv.gif",
+        "img": "./assets/images/kv.png",
+        "alt": "Ofertas",
+        "url": ""
       },
-      "logo": {
-        "img": "./assets/images/clube.png",
-        "alt": "Participe e economize ainda mais.",
-        "url": "https://clubecondor.com"
-      },
-      "download": [
+      "tags": [
         {
-          "img": "./assets/images/app_store.png",
-          "alt": "Baixar na App Store",
-          "url": "https://apps.apple.com/br/app/clube-condor/id1453391822"
+          "img": "./assets/images/6x.png",
+          "text": "<p class='legenda'>No Cartão Condor, em até 3 parcelas de, no mínimo, R$ 20,00 cada, ou em até 6 parcelas de, no mínimo, R$ 50,00 cada. Condições de parcelamento válidas até 31/07/2020. *Exceto recargas para celular e produtos de tabacaria.</p>",
+          "text1": "<p class='legenda'>No Cartão Condor, em até 3 parcelas de, no mínimo, R$ 20,00 cada, ou em até 6 parcelas de, no mínimo, R$ 50,00 cada. Demais cartões, em até 6 parcelas de, no mínimo, R$ 50,00 cada. Condição de parcelamento válida até 31/07/2020. *Exceto recargas para celular e produtos de tabacaria.</p>"
         },
         {
-          "img": "./assets/images/play_store.png",
-          "alt": "Baixar na Play Store",
-          "url": "https://play.google.com/store/apps/details?id=br.com.gsgroup.zoombox.condorsupermercados"
+          "img": "./assets/images/10x.png",
+          "text": "<p class='legenda'>No rotativo, com parcela mínima de R$ 20,00. No Megalimite, a partir de 2 parcelas de, no mínimo, R$ 20,00 cada. *Exceto recargas para celular e produtos de tabacaria.</p>"
+        },
+        {
+          "img": "./assets/images/15x.png",
+          "text": "<p class='legenda'>No rotativo, com parcela mínima de R$ 20,00. No Megalimite, a partir de 2 parcelas de, no mínimo, R$ 20,00 cada.</p>"
         }
       ]
     },
     "ofertas": {
       "status": true,
-      "titulo": "Ofertas do mês da mulher",
+      "titulo": "Confira algumas ofertas",
       "desktop": "./assets/images/title-desktop.png",
       "mobile": "./assets/images/title-mobile.png",
       "textOfertas": "./assets/images/text-ofertas.png",
       "collection": {
-        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=313083",
-        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=313083",
+        "menu": "Menus/MenuDepartamentoKit?",
+        "ofertas": "Ofertas/LojaProdutos?",
         "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=313083"
       },
       "promo": {
         "status": false,
         "titulo": "<span>todos os </span>ovos de páscoa, chocolates, colombas, azeites e bacalhaus",
-        "source": [
-          "./assets/images/parcelamento.png"
-        ]
+        "source": [ "./assets/images/parcelamento.png" ]
       },
       "filtro": [
-        {
-          "value": 1,
-          "nome": "Dinheiro de Volta"
-        },
-        {
-          "value": 2,
-          "nome": "Clube Condor"
-        },
-        {
-          "value": 3,
-          "nome": "Ofertas com Pack"
-        },
-        {
-          "value": 4,
-          "nome": "Preço mais baixo"
-        }
+        { "value": 1, "nome": "Dinheiro de Volta" },
+        { "value": 2, "nome": "Clube Condor" },
+        { "value": 3, "nome": "Ofertas com Pack" },
+        { "value": 4, "nome": "Preço mais baixo" }
       ]
     },
-    "blog": {
+    "condorEmCasa": {
       "status": true,
-      "titulo": "Blog Condor",
-      "buttom": "Ver tudo",
-      "link": "http://www.condor.com.br/blog",
-      "tag": 50,
-      "cant": 3,
-      "col": 4,
-      "legal": ""
-    },
-    "header": {
-      "status": true,
-      "top": {
-        "left": {
-          "class": "col-12 col-md-7 col-lg-6",
-          "logo": "./assets/images/kv.png"
-        },
-        "right": {
-          "class": "col-12 col-md-5 col-lg-6 align-self-center",
-          "text": "Se conheça, se ame, se cuide!",
-          "buttom": {
-            "url": "#ofertas",
-            "texto": "VER OFERTAS"
-          }
-        }
+      "image": "./assets/images/condor_em_casa.png",
+      "texto": "Faça as suas compras para o  Dia das Mães sem sair de casa.",
+      "button": {
+        "img": "./assets/images/botao_delivery.png",
+        "url": "https://www.condor.com.br/delivery/"
       },
-      "middle": {
-        "left": {
-          "status": true,
-          "class": "col-12 col-md-7 col-lg-6 align-self-center",
-          "youtube": "lsRsuOKLy50"
-        },
-        "right": {
-          "class": "col-12 col-md-5 col-lg-6",
-          "image": "./assets/images/promo.png"
-        }
-      },
-
-      "image": "./assets/images/familia.png"
-    },
-    "participar": {
-      "status": true,
-      "titulo": "Como participar",
-      "source": ["./assets/images/participar-1.png", "./assets/images/participar-2.png"]
-    },
-    "delivery": {
-      "status": true,
-      "link": "https://www.condor.com.br/delivery/index.html",
-      "text": "Compre on-line",
-      "icon": "./assets/images/market.svg"
-    },
-    "condoremcasa": {
-      "status": true,
-      "image": "./assets/images/emcasa.png",
-      "text": "leve a páscoa condor para sua casa",
-      "btn": "./assets/images/btn-casa.png",
-      "link": "https://www.condor.com.br/delivery"
+      "eletro": "Para comprar produtos de ELETRO, <a a href='https://loja.condor.com.br' target='_blank'>clique aqui</a>."
     },
     "footer": {
       "status": true,
@@ -127,38 +71,6 @@
       "ig": "https://www.instagram.com/redecondor/",
       "tw": "https://twitter.com/RedeCondor",
       "yt": "https://www.youtube.com/user/redecondor"
-    },
-    "menu": {
-      "status": true,
-      "img": "./assets/images/logo.png",
-      "alt": "Rede Condor",
-      "url": "https://www.condor.com.br",
-      "source": [
-        {
-          "status": true,
-          "url": "#ofertas",
-          "name": "Ofertas",
-          "external": false
-        },
-        {
-          "status": true,
-          "url": "#como-participar",
-          "name": "Como Participar",
-          "external": false
-        },
-        {
-          "status": true,
-          "url": "#blog",
-          "name": "Blog",
-          "external": false
-        },
-        {
-          "status": true,
-          "url": "https://www.condor.com.br/dinheiro-de-volta",
-          "name": "Dinheiro de volta",
-          "external": true
-        }
-      ]
     }
   }
 ]

@@ -23,48 +23,30 @@
         <div class="col-md-6 col-lg-5">
           <select class="browser-default custom-select select mb-3 form-control" (change)="goToLoja($event)">
             <option value="" selected>Selecione a Loja</option>
-            <option *ngFor="let item of lojas$ | async" [value]="item.slug">{{ item.title?.rendered }}</option>
+            <option *ngFor="let item of lojas$ | async" [value]="item.cod_loja">{{ item.title?.rendered }}</option>
           </select>
         </div>
       </div>
       <div class="panel d-none d-lg-block">
         <div class="row">
-          <div class="col-3">
+          <div class="col-5">
             <select class="browser-default select custom-select" (change)="onSelectDepartamento($event, loja.cod_loja)">
-              <option (click)="_onProdutos(loja.cod_loja)" selected>Ver Todos os Departamentos</option>
+              <option value="0" selected>Ver Todos os Departamentos</option>
               <option  *ngFor="let menu of menuDepartamento$ | async" [value]="menu.codigo">{{ menu.departamento}}</option>
             </select>
           </div>
-          <div class="col-6">
-            <form class="form-inline waves-light" mdbWavesEffect>
-              <input type="text" class="form-control w-100" placeholder="O que está procurando?" (change)="onSearch($event, loja.cod_loja)" />
-            </form>
-          </div>
-          <div class="col-3">
-            <select class="browser-default select custom-select" (change)="onFiltro($event)">
-              <option value="" selected>Ver Filtros</option>
-              <option value="0">Remover Filtro</option>
-              <option [value]="opt.value" *ngFor="let opt of item.filtro">{{ opt.nome}}</option>
-            </select>
+          <div class="col-7">
+            <input type="text" class="form-control" placeholder="O que está procurando?" (change)="onSearch($event)" />
           </div>
         </div>
       </div>
       <div class="row grey d-lg-none sticky-top lighten-4 py-1">
         <div class="col-12 negative">
           <div class="row no-gutters justify-content-around">
-            <!-- <div class="col-1 align-self-center">
-              <p class="text-center mb-0" (click)="onToogleDepartamento()">
-                <i class="fas fa-ellipsis-h"></i>
-              </p>
-            </div> -->
             <div class="col-12 col-md-10">
-              <input type="text" class="form-control w-100" placeholder="O que está procurando?" (change)="onSearch($event, loja.cod_loja)" />
+              <input type="text" class="form-control w-100"
+                placeholder="O que está procurando?" (change)="onSearch($event)" />
             </div>
-            <!-- <div class="col-1 align-self-center">
-              <p class="text-center mb-0" (click)="onToogleFilter()">
-                <i class="fas fa-filter"></i>
-              </p>
-            </div> -->
           </div>
         </div>
       </div>
@@ -93,11 +75,6 @@
         </pagination-controls>
         </div>
       </div>
-      <!-- <div class="text-center py-4">
-        <button type="button" class="btn btn-condor-secondary rounded-pill z-depth-2" (click)="loadProdutos($event)">
-          <h5 class="b-05 mb-0">Ver mais</h5>
-        </button>
-      </div> -->
     </div>
   </div>
   <div class="isLoading" *ngIf="isloading">

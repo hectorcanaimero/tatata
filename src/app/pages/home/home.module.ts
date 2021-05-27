@@ -6,28 +6,23 @@ import { RouterModule } from '@angular/router';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { HomeComponent } from './home.component';
-
-import { BlogModule } from '../../widgets/blog/blog.module';
-import { MenuModule } from '../../widgets/menu/menu.module';
 import { FooterModule } from 'src/app/widgets/footer/footer.module';
 import { HeaderModule } from 'src/app/widgets/header/header.module';
-import { OfertasModule } from '../../widgets/ofertas/ofertas.module';
-import { ClubeCondorModule } from '../../widgets/clube-condor/clube-condor.module';
-import { CompreOnlineModule } from '../../widgets/compre-online/compre-online.module';
-import { ComoFuncionaModule } from '../../widgets/como-funciona/como-funciona.module';
+import { OfertasModule } from 'src/app/widgets/ofertas/ofertas.module';
+import { ClubeCondorModule } from 'src/app/widgets/clube-condor/clube-condor.module';
+import { CondorEmCasaModule } from 'src/app/widgets/condor-em-casa/condor-em-casa.module';
 
 const app: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
   declarations: [HomeComponent],
   imports: [
-  BlogModule,
     CommonModule,
     FooterModule,
     HeaderModule,
     OfertasModule,
-    ComoFuncionaModule,
-    CompreOnlineModule,
+    ClubeCondorModule,
+    CondorEmCasaModule,
     MDBBootstrapModule,
     RouterModule.forChild(app),
   ]

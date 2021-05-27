@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private db: DataService) { }
 
   ngOnInit(): void {
-    this.items$ = this.db.getDataApi();
+    this.items$ = this.db.getDataFile();
   }
 
 }

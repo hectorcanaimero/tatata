@@ -1,9 +1,6 @@
 <main *ngIf="(items$ | async) as item">
   <app-header [item]="item.header" [menu]="item.menu"></app-header>
-  <app-como-funciona [item]="item.texto"></app-como-funciona>
   <app-ofertas [item]="item.ofertas"></app-ofertas>
-  <app-clube-condor [item]="item.app"></app-clube-condor>
-  <app-blog [item]="item.blog"></app-blog>
+  <app-condor-em-casa [item]="item.condorEmCasa"></app-condor-em-casa>
   <app-footer [item]="item.footer"></app-footer>
-  <!-- <app-compre-online [item]="item.delivery"></app-compre-online> -->
 </main>

@@ -1,7 +1,5 @@
-import { timer } from 'rxjs';
 import { isPlatformBrowser } from '@angular/common';
-import { DomSanitizer } from '@angular/platform-browser';
-import { Component, OnInit, Input, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, Input, Inject, PLATFORM_ID, OnChanges, SimpleChanges } from '@angular/core';
 import { ObjectHandleService } from 'src/app/shared/services/object-handle.service';
 
 
@@ -10,10 +8,13 @@ import { ObjectHandleService } from 'src/app/shared/services/object-handle.servi
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent implements OnInit, OnChanges {
   @Input() ofertas: any = [];
   @Input() loja: string;
 
+  kit_value: any = undefined;
+  kit_content: string;
+  kit_titulo: string;
   product: any = [];
   vigencia: any = [];
   public shops: any = [];
@@ -28,8 +29,45 @@ export class ProductComponent implements OnInit {
     @Inject(PLATFORM_ID) private platformId: Object,
   ) { }
 
+  ngOnInit(): void {
+    this.proccess(this.ofertas.dsc_kit);
+  }
+
   // tslint:disable-next-line: typedef
-  ngOnInit() { }
+  ngOnChanges(changes: SimpleChanges): void {
+    this.loja = changes.loja.currentValue;
+    this.ofertas = changes.ofertas.currentValue;
+  }
+
+  private proccess = (kit: string) => {
+    const startWithLeve = kit.startsWith('Leve');
+    const startWithMas = kit.indexOf('+');
+    if(startWithLeve) {
+      this.kit_titulo = kit.split('.')[0];
+      this.kit_content = this.proccessContent(kit.split('.')[1]);
+      this.kit_value = this.proccessPreco(kit);
+    } else if(startWithMas === -1) {
+      this.kit_titulo = kit.split('.')[0];
+      this.kit_content = this.proccessContent(kit.split('.')[1]);
+      this.kit_value = this.proccessPreco(kit);
+    }
+    else {
+      this.kit_titulo = kit;
+      this.kit_value = this.proccessPreco(kit);
+    }
+  }
+
+  proccessPreco = (kit) => {
+    const data = kit.split('$')[1];
+    const valor = Number(data.replace(',', '.'));
+    if (typeof valor === 'number') {
+      return valor;
+    }
+    return null;
+  }
+
+
+  proccessContent = (kit) => kit.split('R')[0];
 
   dataLayer = (name: string) => {
     if (isPlatformBrowser(this.platformId)) {

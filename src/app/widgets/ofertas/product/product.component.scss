@@ -30,13 +30,42 @@
       position: absolute;
     }
   }
+  .kits {
+    box-shadow: 0px 2px 3px rgba($color: #000000, $alpha: .40);
+    text-align: center;
+    p{
+      min-height: 130px;
+      padding: .5rem;
+      background-color: #154fa5;
+      color: #fff;
+      font-size: .75rem;
+      margin-bottom: 0px;
+      .titulo {
+        font-size: .9rem;
+        font-weight: 600;
+        color: #f9f004;
+      }
+      .content {
+        padding: 0 10px;
+        display: block;
+      }
+    }
+    .value {
+      min-height: 44px;
+      padding: .5rem;
+      background-color: red;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0px;
+    }
+  }
   .descricao-produto {
     height: 50px;
     margin: 12px 3px;
     min-height: 40px;
     p{
       font-size: 14px;
-      text-align: start;
+      text-align: center;
       font-family: Montserrat, sans-serif;
 
     }
@@ -44,7 +73,7 @@
 
   .preco-regular {
     p{
-      font-size: 15px;
+      font-size: 12px;
       margin: 0px 5px;
       font-weight: bold;
       text-align: center;
@@ -107,7 +136,7 @@
     }
     .preco-regular {
       p{
-        font-size: 17px;
+        font-size: 13px;
         span{
           font-size: 13px;
         }

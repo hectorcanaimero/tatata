@@ -1,0 +1,164 @@
+[
+  {
+    "app": {
+      "status": true,
+      "titulo": "Baixe o aplicativo<br>do Clube Condor",
+      "buttom": {
+        "titulo": "Faça seu cadastro",
+        "url": "https://clubecondor.com"
+      },
+      "logo": {
+        "img": "./assets/images/clube.png",
+        "alt": "Participe e economize ainda mais.",
+        "url": "https://clubecondor.com"
+      },
+      "download": [
+        {
+          "img": "./assets/images/app_store.png",
+          "alt": "Baixar na App Store",
+          "url": "https://apps.apple.com/br/app/clube-condor/id1453391822"
+        },
+        {
+          "img": "./assets/images/play_store.png",
+          "alt": "Baixar na Play Store",
+          "url": "https://play.google.com/store/apps/details?id=br.com.gsgroup.zoombox.condorsupermercados"
+        }
+      ]
+    },
+    "ofertas": {
+      "status": true,
+      "titulo": "Ofertas do mês da mulher",
+      "desktop": "./assets/images/title-desktop.png",
+      "mobile": "./assets/images/title-mobile.png",
+      "textOfertas": "./assets/images/text-ofertas.png",
+      "collection": {
+        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=313083",
+        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=313083",
+        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=313083"
+      },
+      "promo": {
+        "status": false,
+        "titulo": "<span>todos os </span>ovos de páscoa, chocolates, colombas, azeites e bacalhaus",
+        "source": [
+          "./assets/images/parcelamento.png"
+        ]
+      },
+      "filtro": [
+        {
+          "value": 1,
+          "nome": "Dinheiro de Volta"
+        },
+        {
+          "value": 2,
+          "nome": "Clube Condor"
+        },
+        {
+          "value": 3,
+          "nome": "Ofertas com Pack"
+        },
+        {
+          "value": 4,
+          "nome": "Preço mais baixo"
+        }
+      ]
+    },
+    "blog": {
+      "status": true,
+      "titulo": "Blog Condor",
+      "buttom": "Ver tudo",
+      "link": "http://www.condor.com.br/blog",
+      "tag": 50,
+      "cant": 3,
+      "col": 4,
+      "legal": ""
+    },
+    "header": {
+      "status": true,
+      "top": {
+        "left": {
+          "class": "col-12 col-md-7 col-lg-6",
+          "logo": "./assets/images/kv.png"
+        },
+        "right": {
+          "class": "col-12 col-md-5 col-lg-6 align-self-center",
+          "text": "Se conheça, se ame, se cuide!",
+          "buttom": {
+            "url": "#ofertas",
+            "texto": "VER OFERTAS"
+          }
+        }
+      },
+      "middle": {
+        "left": {
+          "status": true,
+          "class": "col-12 col-md-7 col-lg-6 align-self-center",
+          "youtube": "lsRsuOKLy50"
+        },
+        "right": {
+          "class": "col-12 col-md-5 col-lg-6",
+          "image": "./assets/images/promo.png"
+        }
+      },
+
+      "image": "./assets/images/familia.png"
+    },
+    "participar": {
+      "status": true,
+      "titulo": "Como participar",
+      "source": ["./assets/images/participar-1.png", "./assets/images/participar-2.png"]
+    },
+    "delivery": {
+      "status": true,
+      "link": "https://www.condor.com.br/delivery/index.html",
+      "text": "Compre on-line",
+      "icon": "./assets/images/market.svg"
+    },
+    "condoremcasa": {
+      "status": true,
+      "image": "./assets/images/emcasa.png",
+      "text": "leve a páscoa condor para sua casa",
+      "btn": "./assets/images/btn-casa.png",
+      "link": "https://www.condor.com.br/delivery"
+    },
+    "footer": {
+      "status": true,
+      "title": "@Condor 2021. Todos os direitos reservados.",
+      "fb": "https://www.facebook.com/RedeCondor/",
+      "ig": "https://www.instagram.com/redecondor/",
+      "tw": "https://twitter.com/RedeCondor",
+      "yt": "https://www.youtube.com/user/redecondor"
+    },
+    "menu": {
+      "status": true,
+      "img": "./assets/images/logo.png",
+      "alt": "Rede Condor",
+      "url": "https://www.condor.com.br",
+      "source": [
+        {
+          "status": true,
+          "url": "#ofertas",
+          "name": "Ofertas",
+          "external": false
+        },
+        {
+          "status": true,
+          "url": "#como-participar",
+          "name": "Como Participar",
+          "external": false
+        },
+        {
+          "status": true,
+          "url": "#blog",
+          "name": "Blog",
+          "external": false
+        },
+        {
+          "status": true,
+          "url": "https://www.condor.com.br/dinheiro-de-volta",
+          "name": "Dinheiro de volta",
+          "external": true
+        }
+      ]
+    }
+  }
+]
