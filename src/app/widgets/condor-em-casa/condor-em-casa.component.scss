@@ -1,0 +1,66 @@
+section{
+  position: relative;
+  color: #fff;
+  .cupido {
+    position: absolute;
+    width: 120px;
+    top: -5%;
+    left: 40%;
+    z-index: 10;
+  }
+  .content {
+    background-color: var(--color-tertiary);
+    a{
+      color: #fff !important;
+      .titulo {
+        margin: 2rem 0;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
+@media(min-width: 768px) {
+  section{
+    .cupido {
+      width: 140px;
+      top: -10%;
+      left: 45%;
+    }
+  }
+}
+
+
+@media(min-width: 1024px) {
+  section{
+    .cupido {
+      width: 140px;
+      top: -7%;
+      left: 47%;
+    }
+  }
+}
+
+
+@media(min-width: 1200px) {
+  section{
+    .cupido {
+      width: 150px;
+      top: -7%;
+      left: 50%;
+    }
+  }
+}
+
+
+@media(min-width: 1400px) {
+  section{
+    .cupido {
+      width: 160px;
+      top: -5%;
+      left: 50%;
+    }
+  }
+}

@@ -8,13 +8,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HomeComponent } from './home.component';
 
 import { BlogModule } from '../../widgets/blog/blog.module';
-import { MenuModule } from '../../widgets/menu/menu.module';
 import { FooterModule } from 'src/app/widgets/footer/footer.module';
 import { HeaderModule } from 'src/app/widgets/header/header.module';
 import { OfertasModule } from '../../widgets/ofertas/ofertas.module';
-import { ClubeCondorModule } from '../../widgets/clube-condor/clube-condor.module';
-import { CompreOnlineModule } from '../../widgets/compre-online/compre-online.module';
-import { ComoFuncionaModule } from '../../widgets/como-funciona/como-funciona.module';
+import { PromocaoModule } from './../../widgets/promocao/promocao.module';
+import { AplicativoModule } from './../../widgets/aplicativo/aplicativo.module';
+import { CondorEmCasaModule } from './../../widgets/condor-em-casa/condor-em-casa.module';
+import { FilterInstagramModule } from './../../widgets/filter-instagram/filter-instagram.module';
+import { CondorMaisProximoModule } from './../../widgets/condor-mais-proximo/condor-mais-proximo.module';
 
 const app: Routes = [{ path: '', component: HomeComponent }];
 
@@ -26,9 +27,12 @@ const app: Routes = [{ path: '', component: HomeComponent }];
     FooterModule,
     HeaderModule,
     OfertasModule,
-    ComoFuncionaModule,
-    CompreOnlineModule,
+    PromocaoModule,
+    AplicativoModule,
+    CondorEmCasaModule,
     MDBBootstrapModule,
+    FilterInstagramModule,
+    CondorMaisProximoModule,
     RouterModule.forChild(app),
   ]
 })

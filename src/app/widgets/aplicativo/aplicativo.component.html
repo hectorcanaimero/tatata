@@ -1,0 +1,21 @@
+<section id="app" class="py-4" *ngIf="item.status">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-9">
+        <a [href]="item.buttom.url" target="_blank">
+          <img [src]="item.buttom.img" alt="" class="w-100">
+        </a>
+      </div>
+      <div class="col-12">
+        <h2 class="titulo">{{ item.titulo }}</h2>
+      </div>
+      <div class="col-6 col-md-4"  *ngFor="let loja of item.download; trackBy: trackById">
+        <div class="text-center">
+          <a [href]="loja.url" target="_blank">
+            <img [src]="loja.img" class="img-fluid mb-3" [alt]="loja.alt">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

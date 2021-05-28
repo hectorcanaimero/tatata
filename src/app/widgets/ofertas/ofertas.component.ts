@@ -1,9 +1,7 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, Input, OnInit } from '@angular/core';
 
-import { trigger, transition, style, animate } from '@angular/animations';
-
-import { Observable, timer } from 'rxjs';
+import { Observable } from 'rxjs';
 import { debounceTime, map, tap } from 'rxjs/operators';
 import { Lojas } from 'src/app/shared/interfaces/content';
 import { Ofertas } from 'src/app/shared/interfaces/ofertas';
@@ -14,27 +12,8 @@ import { DataService } from 'src/app/shared/services/data.service';
   selector: 'app-ofertas',
   templateUrl: './ofertas.component.html',
   styleUrls: ['./ofertas.component.scss'],
-  animations: [
-    trigger('slideInRight', [
-      transition(':enter', [
-        style({transform: 'translateX(-100%)'}),
-        animate('200ms ease-in', style({transform: 'translateX(0%)'}))
-      ]),
-      transition(':leave', [
-        animate('200ms ease-in', style({transform: 'translateX(-100%)'}))
-      ])
-    ]),
-    trigger('slideInLeft', [
-      transition(':enter', [
-        style({transform: 'translateX(100%)'}),
-        animate('200ms ease-in', style({transform: 'translateX(0%)'}))
-      ]),
-      transition(':leave', [
-        animate('200ms ease-in', style({transform: 'translateX(100%)'}))
-      ])
-    ])
-  ]
 })
+
 export class OfertasComponent implements OnInit {
 
   @Input() item: any = [];
@@ -67,17 +46,18 @@ export class OfertasComponent implements OnInit {
 
   ngOnInit(): void {
     this.region$ = this.db.getRegion$();
-    this.slug$ = this.act.paramMap.pipe(map(paramsMap => paramsMap.get('slug')));
-    this.slug$.subscribe((res) => {
-      if (res) {
-        this.getOnInit(res);
-      } else {
-        this.getOnInit(this.id);
-      }
-    });
+    this.getOnInit();
+    // this.slug$ = this.act.paramMap.pipe(map(paramsMap => paramsMap.get('slug')));
+    // this.slug$.subscribe((res) => {
+    //   if (res) {
+    //     this.getOnInit(res);
+    //   } else {
+    //     this.getOnInit(this.id);
+    //   }
+    // });
   }
 
-  getOnInit = (slug: string) => {
+  getOnInit = (slug = this.id) => {
     this.loja$  = this.db.getCollection(`Lojas?filter[where][slug]=${slug}`)
     .pipe(
       map(res => res[0]),
@@ -117,8 +97,17 @@ export class OfertasComponent implements OnInit {
     .pipe( map((res) => res.filter((row) => this._toSlug(row.cidade) === e.target?.value)) );
   }
 
-  goToLoja = (e: any) => {
-    this.router.navigate(['/loja', e.target.value]);
+  goToLoja = (ev: any) => {
+    this.isloading = true;
+    const value = + ev.target.value;
+    console.log(value);
+    this.loja$  = this.db.getCollection(`Lojas?filter[where][cod_loja]=${value}`).pipe(map(res => res[0]))
+    this.items$ = this.db.getCollection(`${this.item.collection.ofertas}&loja=${value}`)
+    .pipe(
+      debounceTime(500),
+      tap((res) =>  this.db.setData$(res)),
+      tap(() =>  this.isloading = false)
+    );
   }
 
   private _toSlug = (str: string) => {
@@ -138,12 +127,12 @@ export class OfertasComponent implements OnInit {
   onSearch = (e: any, loja: number) => {
     this.isloading = true;
     const value = `${e.target.value}`.toLocaleLowerCase();
-    this.items$ = this.db.getCollection(`${this.item.collection.ofertas}&loja=${loja}`).pipe(
-      debounceTime(500),
+    this.items$ = this.db.getData$().pipe(
       map(res => res['filter']((row: any) => row.produtos['dsc_produto'].toLowerCase().includes(value))),
+      debounceTime(500),
       tap(res => {
-        this.isloading = false;
         if(res['length'] < 1) {this.message = 'Não há produtos disponíveis.'; }
+        this.isloading = false;
       })
     );
   }

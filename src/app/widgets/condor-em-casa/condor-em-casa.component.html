@@ -1,0 +1,23 @@
+<section id="condor-em-casa" *ngIf="item.status">
+  <img [src]="item.cupido.mobile" class="cupido" alt="">
+  <img src="./assets/images/em_casa_top.png" class="w-100 d-md-none">
+  <img src="./assets/images/em_casa_top_desktop.png" class="w-100 d-none d-md-block">
+  <div class="content">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-10 col-md-7">
+          <img [src]="item.image" [alt]="item.text" class="img-fluid">
+        </div>
+        <div class="col-10 col-md-4 align-self-center">
+          <a [href]="item.button.url" target="_blank">
+            <h3 class="titulo">{{ item.texto }}</h3>
+            <img [src]="item.button.img" [alt]="item.texto" class="img-fluid px-2 pb-3">
+          </a>
+          <p class="eletro" [innerHtml]="item.eletro"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/images/em_casa_bottom.png" class="w-100 d-md-none">
+  <img src="./assets/images/em_casa_bottom_desktop.png" class="w-100 d-none d-md-block">
+</section>

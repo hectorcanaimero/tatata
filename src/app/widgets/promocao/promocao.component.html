@@ -1,0 +1,17 @@
+<section *ngIf="item.status">
+  <img src="./assets/images/promocao_top.png" class="w-100">
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
+          <img [src]="item.left.img" class="img-fluid" alt="">
+        </div>
+        <div class="col-12 col-md-6 align-self-center">
+          <img [src]="item.right.img" class="img-fluid d-none d-md-block" alt="">
+          <img [src]="item.right.imgmobile" class="img-fluid d-md-none" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/images/promocao_bottom.png" class="w-100">
+</section>

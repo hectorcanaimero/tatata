@@ -1,34 +1,21 @@
-<footer id="footer" class="py-2" *ngIf="item.status">
-  <div class="container">
-    <p class="text-center f-07 white-text" [innerHTML]="item.legal"></p>
+<footer id="footer" *ngIf="item.status">
+  <div class="container py-2">
     <div class="row ios justify-content-between">
-      <div class="col-12 d-lg-none">
-        <p class="text-center b-05 f-09 white-text" [innerHTML]="item.title"></p>
-      </div>
       <div class="col-12 col-md-4 col-lg-3 align-self-center">
         <a href="https://www.condor.com.br/" target="_blank">
           <img src="./assets/images/logo.png" alt="Rede Condor" class="img-fluid mx-auto d-block" />
         </a>
       </div>
-      <div class="col-md-6 d-none d-lg-block">
-        <p class="text-center b-05 mt-2 mb-0 white-text"> {{ item.title }} </p>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3 align-self-center">
+      <div class="col-12 col-md-4 col-lg-3 align-self-center mt-2">
         <div class="d-flex flex-row justify-content-center">
-          <a [href]="item.fb" class="circle btn-circle mb-0">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a [href]="item.ig" target="_blank" class="circle btn-circle mb-0 mx-2">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a [href]="item.tw" target="_blank" class="circle btn-circle mb-0 mr-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a [href]="item.yt" target="_blank" class="circle btn-circle mb-0">
-            <i class="fab fa-youtube"></i>
+          <a *ngFor="let social of item.source" [href]="social.url" target="_blank" class="circle btn-circle mr-3">
+            <i [class]="social.icon"></i>
           </a>
         </div>
       </div>
     </div>
+  </div>
+  <div class="copyright">
+    <p [innerHTML]="item.title"></p>
   </div>
 </footer>

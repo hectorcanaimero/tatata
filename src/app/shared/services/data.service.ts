@@ -20,9 +20,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   private data$: BehaviorSubject<Ofertas[]> = new BehaviorSubject(null);
-
   private region$: BehaviorSubject<any[]> = new BehaviorSubject(null);
-
   private loja$: BehaviorSubject<Lojas[]> = new BehaviorSubject(null);
 
   getData$ = (): Observable<Ofertas[]> => this.data$.asObservable();
@@ -55,17 +53,18 @@ export class DataService {
 
   /** * Regão e Lojas */
   getLojas = (): Observable<Lojas[]> => {
-    return this.http.get<Lojas[]>(`${ environment.v3 }/loja?per_page=100`).pipe(tap(data => this.setLojas$(data)));
+    return this.http.get<Lojas[]>(`${ environment.v3 }/loja?per_page=100`).pipe(
+      tap(data => this.setLojas$(data)));
   }
   getRegion = (): Observable<any[]> => {
-    return this.http.get<any[]>(`${ environment.v3 }/region?per_page=100`).pipe(tap(data => this.setRegion$(data)));
+    return this.http.get<any[]>(`${ environment.v3 }/region?per_page=100`).pipe(
+      tap(data => this.setRegion$(data)));
   }
 
   /** * Data da LP */
-  getDataApi = (): Observable<any[]> => {
-    return this.http.get<any[]>(`${ environment.v2 }/landingpages`).pipe(
-      map((res) => res.filter((row: any) => row.slug === environment.name)[0].data)
-    );
+  getDataApi = (): Observable<any> => {
+    return this.http.get<any>(`${ environment.v2 }/landingpage/slug/${environment.name}`).pipe(
+      map((res) => res.data));
   }
 
   getDataFile = (): Observable<any []> => this.http.get<any[]>('./assets/db.json').pipe(map(res => res[0]));
