@@ -1,17 +1,52 @@
 <section *ngIf="item.status">
-  <img src="./assets/images/promocao_top.png" class="w-100">
-  <div class="content">
+  <div class="pt-4 d-xl-none">
+    <div class="row no-gutters justify-content-center mb-3">
+      <div class="col-8 col-md-7 align-self-center">
+        <h2 class="pl-3 titulo" [innerHtml]="item.titulo"></h2>
+        <div class="text-right pr-3">
+          <img [src]="item.imgLive" class="w-50" alt="Live">
+        </div>
+      </div>
+      <div class="col-4 col-md-3">
+        <img [src]="item.imgConfira" class="w-100" alt="Confira">
+      </div>
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 mb-4">
-          <img [src]="item.left.img" class="img-fluid" alt="">
-        </div>
-        <div class="col-12 col-md-6 align-self-center">
-          <img [src]="item.right.img" class="img-fluid d-none d-md-block" alt="">
-          <img [src]="item.right.imgmobile" class="img-fluid d-md-none" alt="">
+        <div class="col-4" *ngFor="let ico of item.source">
+          <img [src]="ico.img" class="img-fluid" [alt]="ico.alt">
+          <p class="ico-texto">{{ ico.alt }}</p>
         </div>
       </div>
     </div>
+    <img [src]="item.parcela.mobile" class="w-100">
   </div>
-  <img src="./assets/images/promocao_bottom.png" class="w-100">
+  <div class="d-none d-xl-block">
+    <div class="row no-gutters">
+      <div class="col-xl-7 align-self-center">
+        <div class="p-1">
+          <div class="row no-gutters justify-content-center mb-3">
+            <div class="col-9 align-self-center">
+              <h2 class="pl-3 titulo" [innerHtml]="item.titulo"></h2>
+              <div class="text-right pr-3">
+                <img [src]="item.imgLive" class="w-50" alt="Live">
+              </div>
+            </div>
+            <div class="col-3">
+              <img [src]="item.imgConfira" class="w-100" alt="Confira">
+            </div>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-3" *ngFor="let ico of item.source">
+              <img [src]="ico.img" class="img-fluid" [alt]="ico.alt">
+              <p class="ico-texto">{{ ico.alt }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-5">
+        <img [src]="item.parcela.desktop" class="w-100">
+      </div>
+    </div>
+  </div>
 </section>

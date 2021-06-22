@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.items$ = this.db.getDataApi();
-    this.items$.subscribe((res) => console.log(res));
   }
 
 }

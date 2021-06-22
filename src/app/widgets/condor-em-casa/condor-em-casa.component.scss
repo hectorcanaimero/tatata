@@ -1,5 +1,6 @@
 section{
-  position: relative;
+  background: rgb(98,20,52);
+  background: linear-gradient(180deg, rgba(98,20,52,1) 1%, rgba(200,40,68,1) 100%);  position: relative;
   color: #fff;
   .cupido {
     position: absolute;
@@ -9,7 +10,6 @@ section{
     z-index: 10;
   }
   .content {
-    background-color: var(--color-tertiary);
     a{
       color: #fff !important;
       .titulo {

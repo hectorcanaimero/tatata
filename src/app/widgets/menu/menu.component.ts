@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { NavbarComponent } from 'angular-bootstrap-md';
 
 @Component({
   selector: 'app-menu',
@@ -7,11 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  @ViewChild('navbar', { static: true }) navbar: NavbarComponent
+
   @Input() item: any = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    const nav = document.getElementsByClassName('navbar-toggler')
+    console.log(nav);
   }
-
 }

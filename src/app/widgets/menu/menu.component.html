@@ -1,26 +1,5 @@
-<!-- Desktop -->
-<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav d-lg-none d-xl-block"
-[containerInside]="true" *ngIf="item.status">
-  <mdb-navbar-brand>
-    <a class="logo navbar-brand" href="{{ item.url }}" target="_blank">
-      <img [src]="item.img" class="img-fluid logo" alt="{{ item.alt }}">
-    </a>
-  </mdb-navbar-brand>
-    <links>
-        <ul class="navbar-nav mx-auto">
-          <span *ngFor="let i of item.source">
-            <li class="nav-item" *ngIf="i.status">
-              <a class="nav-link waves-light" *ngIf="!i.external"
-              [ngxScrollTo]="i.url" mdbWavesEffect>{{ i.name }}</a>
-              <a class="nav-link waves-light" *ngIf="i.external"
-              href="{{i.url}}" target="_blank" mdbWavesEffect>{{ i.name }}</a>
-            </li>
-          </span>
-        </ul>
-    </links>
-</mdb-navbar>
-<!-- Mobile -->
-<mdb-navbar SideClass="navbar navbar-expand-xl navbar-dark scrolling-navbar ie-nav intro-fixed-nav d-xl-none"
+
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-xl navbar-dark scrolling-navbar ie-nav intro-fixed-nav"
 [containerInside]="true" *ngIf="item.status">
   <mdb-navbar-brand>
     <a class="logo navbar-brand" href="{{ item.url }}" target="_blank">

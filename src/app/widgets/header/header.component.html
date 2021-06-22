@@ -1,16 +1,16 @@
-<header id="header" *ngIf="item.status" [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
+<header id="header" *ngIf="item.status">
   <app-menu [item]="menu"></app-menu>
   <div class="container py-5">
-    <div class="row justify-content-center pt-md-5">
-      <div class="col-12 col-md-6 align-self-center">
+    <div class="row justify-content-center">
+      <div class="col-11 col-md-9 col-xl-5 align-self-center">
         <a href="">
-          <img [src]="item.kv" class="img-fluid mb-3" alt="Corrente de Esperanca">
+          <img [src]="item.kv" class="img-fluid mb-3 my-md-5" alt="Corrente de Esperanca">
         </a>
       </div>
-      <div class="col-12 col-md-6 align-self-center" *ngIf="item.youtube.status">
-        <div class="frame">
-          <app-youtube [id]="item.youtube.id"></app-youtube>
-        </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-9 col-md-7 col-xl-4">
+        <img [src]="item.title.img" class="w-100 mt-md-4 mt-xl-5" [alt]="item.title.alt">
       </div>
     </div>
   </div>
