@@ -1,66 +1,18 @@
 section{
-  background: rgb(98,20,52);
-  background: linear-gradient(180deg, rgba(98,20,52,1) 1%, rgba(200,40,68,1) 100%);  position: relative;
-  color: #fff;
-  .cupido {
-    position: absolute;
-    width: 120px;
-    top: -5%;
-    left: 40%;
-    z-index: 10;
+  .image {
+    padding-top: 10px;
+    background-color: var(--color-primary);
   }
   .content {
+    background: url('../../../assets/images/bg-fundo-delivery.png') repeat-y;
+    background-size: cover;
     a{
-      color: #fff !important;
+      color: var(--color-primary);
       .titulo {
         margin: 2rem 0;
         text-align: center;
         font-weight: 700;
       }
-    }
-  }
-}
-
-
-@media(min-width: 768px) {
-  section{
-    .cupido {
-      width: 140px;
-      top: -10%;
-      left: 45%;
-    }
-  }
-}
-
-
-@media(min-width: 1024px) {
-  section{
-    .cupido {
-      width: 140px;
-      top: -7%;
-      left: 47%;
-    }
-  }
-}
-
-
-@media(min-width: 1200px) {
-  section{
-    .cupido {
-      width: 150px;
-      top: -7%;
-      left: 50%;
-    }
-  }
-}
-
-
-@media(min-width: 1400px) {
-  section{
-    .cupido {
-      width: 160px;
-      top: -5%;
-      left: 50%;
     }
   }
 }

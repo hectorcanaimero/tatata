@@ -1,7 +1,6 @@
 header{
-  background: url('../../../assets/images/bg_header_mobile.png') no-repeat center center;
+  background: url('../../../assets/images/bg_header_mobile.jpg') no-repeat bottom center;
   background-size: cover;
-  height: 100vh;
   .youtube{
     margin-top: -5rem;
     .frame {
@@ -15,7 +14,7 @@ header{
 
 @media(min-width: 1200px) {
   header{
-    background: url('../../../assets/images/bg_header_desktop.png') no-repeat center center;
+    background: url('../../../assets/images/bg_header_desktop.jpg') no-repeat center center;
     height: initial;
   }
 }

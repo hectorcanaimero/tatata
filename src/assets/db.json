@@ -1,24 +1,14 @@
 [
   {
-    "app": {
-      "status": false,
-      "titulo": "Baixe o aplicativo agora",
+    "appOld": {
+      "status": true,
+      "text": "O seu clube de beneficios e descontos exclusivos",
+      "logo": "./assets/images/logo-clube.png",
+      "familia": "./assets/images/familia.png",
       "buttom": {
-        "img": "./assets/images/clube_condor.png",
+        "img": "./assets/images/buttom-app-old.png",
         "url": "https://clubecondor.com"
-      },
-      "download": [
-        {
-          "img": "./assets/images/app_store.png",
-          "alt": "Baixar na App Store",
-          "url": "https://apps.apple.com/br/app/clube-condor/id1453391822"
-        },
-        {
-          "img": "./assets/images/play_store.png",
-          "alt": "Baixar na Play Store",
-          "url": "https://play.google.com/store/apps/details?id=br.com.gsgroup.zoombox.condorsupermercados"
-        }
-      ]
+      }
     },
     "ofertas": {
       "status": true,
@@ -27,9 +17,9 @@
       "mobile": "./assets/images/title-mobile.png",
       "textOfertas": "./assets/images/text-ofertas.png",
       "collection": {
-        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=338037",
-        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=338037",
-        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=338037"
+        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=348345",
+        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=348345",
+        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=348345"
       },
       "promo": {
         "status": false,
@@ -57,78 +47,23 @@
         }
       ]
     },
-    "promocao": {
-      "status": true,
-      "titulo": "acompanhe também as <b>nossas lives especiais:</b>",
-      "imgLive":"./assets/images/live.png",
-      "imgConfira":"./assets/images/confira.png",
-      "parcela": {
-        "mobile": "./assets/images/parcela_mobile.png",
-        "desktop": "./assets/images/parcela_desktop.png"
-      },
-      "source": [
-        {
-          "img": "./assets/images/ico-1.png",
-          "alt": "Harmonizações com cervejas especiais."
-        },
-        {
-          "img": "./assets/images/ico-2.png",
-          "alt": "Harmonizações com cervejas e massas."
-        },
-        {
-          "img": "./assets/images/ico-3.png",
-          "alt": "Aprenda tudo sobre vinhos."
-        }
-      ]
-    },
-    "promocaoTwo": {
-      "status": true,
-      "titulo": "Vinhos de importação exclusiva, <span class='text-white'>que harmonizam com momentos especiais e um inverno mais quentinho.</span>",
-      "galhos": "./assets/images/galhos.png",
-      "vinhos": {
-        "mobile": "./assets/images/vinhos_mobile.png",
-        "desktop": "./assets/images/vinhos_desktop.png"
-      }
-    },
-    "blog": {
-      "col": 4,
-      "cant": 3,
-      "urlPost": "https://www.condor.com.br/institucional",
-      "buttom": "Ver tudo",
-      "status": true,
-      "titulo": "Blog",
-      "api": "https://teste.condor.com.br/blog/wp-json/wp/v2",
-      "tag": 1171,
-      "link": "https://www.condor.com.br/blog/"
-    },
-    "filtroInstagram": {
-      "status": true,
-      "titulo": "Divirta-se com seu mozão com os filtros especiais!",
-      "source": [
-        {
-          "link": "https://bit.ly/32JXPqZ",
-          "mobile": "./assets/images/filtro-mobile-1.png",
-          "desktop": "./assets/images/filtro-desktop-1.png"
-        }
-      ]
-    },
     "header": {
       "status": true,
       "background": "./assets/images/bg_header_mobile.png",
       "kv": "./assets/images/kv.png",
       "title": {
-        "img": "./assets/images/kv_title.png",
+        "img": "./assets/images/header-right.png",
         "alt": "Bom gosto e economia para momentos especiais."
       },
       "youtube": {
-        "status": false,
-        "id": "agiXRJ_sAS0"
+        "status": true,
+        "id": "c967Oztsvlc"
       }
     },
     "condorEmCasa": {
       "status": true,
       "image": "./assets/images/em_casa.png",
-      "texto": "E você também pode comprar tudo isso on-line e receber na sua casa.",
+      "texto": "Você também pode fazer as compras para o Dia dos Pais sem sair de casa.",
       "button": {
         "img": "./assets/images/btn-casa.png",
         "url": "https://www.condor.com.br/delivery/"
@@ -169,12 +104,39 @@
         "loja": "Selecione a Loja"
       }
     },
+    "filterIG": {
+      "status": false,
+      "titulo": "divirta-se com seu paizão usando nossos filtros especias!",
+      "source": [
+        {
+          "link": "https://bit.ly/32JXPqZ",
+          "mobile": "./assets/images/filtros/filtro-mobile-1.png",
+          "desktop": "./assets/images/filtros/filtro-desktop-1.png"
+        },
+        {
+          "link": "https://bit.ly/3vcihNz",
+          "mobile": "./assets/images/filtros/filtro-mobile-2.png",
+          "desktop": "./assets/images/filtros/filtro-desktop-2.png"
+        },
+        {
+          "link": "https://bit.ly/3tCEq7n",
+          "mobile": "./assets/images/filtros/filtro-mobile-3.png",
+          "desktop": "./assets/images/filtros/filtro-desktop-3.png"
+        }
+      ]
+    },
     "menu": {
       "status": true,
       "img": "./assets/images/logo.png",
       "alt": "Rede Condor",
       "url": "https://www.condor.com.br",
       "source": [
+        {
+          "status": true,
+          "url": "#header",
+          "name": "Home",
+          "external": false
+        },
         {
           "status": true,
           "url": "#ofertas",
@@ -188,9 +150,9 @@
           "external": false
         },
         {
-          "status": false,
-          "url": "#lives",
-          "name": "Lives",
+          "status": true,
+          "url": "#app",
+          "name": "Clube Condor",
           "external": false
         },
         {
@@ -207,188 +169,16 @@
         }
       ]
     },
-    "lives": {
-      "status": false,
-      "logo": "./assets/images/lives_logo.png",
-      "url": "https://www.youtube.com/user/redecondor",
-      "titulo": "confira o nossas lives exclusivas",
-      "texto": "Preparamos uma programação especial de lives para você aproveitar durante este inverno. Serão aulas-show sobre gastronomia de inverno, com conteúdos como harmonização de vinhos, preparo de massas e muito mais. Aproveite os eventos on-line exclusivos para deixar o seu inverno ainda mais aconchegante.",
-      "source": [
-          {
-              "img": "./assets/images/live/01.jpg",
-              "titulo": "O Mundo da Cerveja - Aromas & Sabores",
-              "data": "16 de junho - terça-feira - 19h30",
-              "url": "https://youtu.be/bbq_rJu89O8",
-              "urlText": "Ver novamente",
-              "text": "Assistir",
-              "convidadoStatus": true,
-              "convidado": "convidados",
-              "columnConvidado": "col-6 com-md-3 col-lg-3",
-              "content": "A live “O Mundo da Cerveja - Aromas & Sabores”, uma parceria entre Condor e Ambev, traz um bate-papo muito legal com os sommeliers consagrados no mundo cervejeiro, o Henrique Schmidlin Cruz e a Nicolli Spaciari, que dão dicas de harmonizações, curiosidades, histórias e muitas outras informações sobre essa bebida tão querida pelos brasileiros.",
-              "convidados": [
-                  {
-                      "img": "./assets/images/somelier/01-01.png",
-                      "text": "Henrique Schmidlin"
-                  },
-                  {
-                      "img": "./assets/images/somelier/01-02.png",
-                      "text": "Nicolli Spaciari"
-                  }
-        ],
-              "columnSopponsorstatus": false,
-              "columnSponsor": "col-md-8 col-lg-8",
-              "sponsor": [
-                  {
-                      "img": "./assets/images/fornecedor/img-01.jpg",
-                      "text": "fornecedores"
-                  }
-        ]
-      },
-          {
-              "img": "./assets/images/live/02.jpg",
-              "titulo": "3 Corações - Cafés Especiais e Receitas Incríveis",
-              "data": "23 de junho - terça-feira - 19h30",
-              "url": "https://youtu.be/f-Slu12_zH0",
-              "urlText": "Ver novamente",
-              "text": "Assistir",
-              "convidadoStatus": true,
-              "columnConvidado": "col-6 col-md-3 col-lg-3",
-              "convidado": "",
-              "content": "<p>Aprenda como fazer Café Cremoso, Café Mocha, Café Espresso e outras receitas incríveis com café nesta live da 3 Corações, em parceria com o Condor!</p><p>Surpreenda os seus amigos com receitas à base de café, iguais as das melhores cafeterias gourmet e o melhor: com cafés especiais que você encontra na loja Condor mais próxima de você!</p>",
-              "convidados": [
-                  {
-                      "img": "./assets/images/somelier/02-01.png",
-                      "text": "Presença do especialista João Carlstron"
-                  }
-        ],
-              "columnSopponsorstatus": false,
-              "columnSponsor": "col-md-8 col-lg-8",
-              "sponsor": [
-                  {
-                      "img": "./assets/images/fornecedor/img-01.jpg",
-                      "text": "fornecedores"
-                  }
-        ]
-      },
-          {
-              "img": "./assets/images/live/03.jpg",
-              "titulo": "Arraiá Condor",
-              "data": "27 de junho - sábado - 15h30",
-              "url": "https://youtu.be/RvZnpaRkL4U",
-              "text": "Assistir",
-              "urlText": "Ver novamente",
-              "convidadoStatus": true,
-              "columnConvidado": "col-md-5 col-lg-5",
-              "convidado": "",
-              "content": "<p>Sentindo falta das comidas e músicas de festa junina? Então essa live é para você!</p><p>O Condor preparou uma festa junina virtual com apresentação do Jasson Goulart e da Cecília Comel, além de muita música da dupla curitibana Gustavo Toledo & Gabriel, cantando grandes sucessos das festas juninas, para você curtir com segurança e sem sair de casa!</p><p>Nessa live você ainda vai aprender receitas de dar água na boca para fazer em casa e aproveitar com toda a sua família!</p>",
-              "convidados": [
-                  {
-                      "img": "./assets/images/arraia_apresentadores.png",
-                      "text": ""
-                  },
-                  {
-                      "img": "./assets/images/arraia_convidados.png",
-                      "text": ""
-                  }
-        ],
-              "columnSopponsorstatus": true,
-              "columnSponsor": "col-md-4 col-lg-4",
-              "sponsor": [
-                  {
-                      "img": "./assets/images/arraia_patrocinadores.png",
-                      "text": "fornecedores"
-                  }
-        ]
-      },
-          {
-              "img": "./assets/images/live/04.jpg",
-              "titulo": "Santa Isle Gran Reserva – Harmonização Vinho e Massa",
-              "data": "30 de junho - terça-feira - 19h30",
-              "url": "https://youtu.be/lCJZraQ2uLA",
-              "text": "Assistir",
-              "urlText": "Ver novamente",
-              "convidadoStatus": true,
-              "columnConvidado": "col-6 col-md-3 col-lg-3",
-              "convidado": "",
-              "content": "<p>Você sabe como escolher vinho para acompanhar massa? Não!? Então essa live é para você!</p><p>Em mais uma live, da série “Lives de Inverno”, Guilherme Balbino, sommelier, e Guilherme Guzela, chef, ensinam você a fazer harmonização de vinhos com massas como um verdadeiro profissional!</p>",
-              "convidados": [
-                  {
-                      "img": "./assets/images/somelier/04-01.png",
-                      "text": "Guilherme Guzela"
-                  },
-                  {
-                      "img": "./assets/images/somelier/04-02.png",
-                      "text": "Guilherme Balbino"
-                  }
-        ],
-              "columnSopponsorstatus": false,
-              "columnSponsor": "col-md-8 col-lg-8",
-              "sponsor": [
-                  {
-                      "img": "./assets/images/fornecedor/img-01.jpg",
-                      "text": "fornecedores"
-                  }
-        ]
-      },
-          {
-              "img": "./assets/images/live/05.jpg",
-              "titulo": "Bacardí – Aprenda 5 Drinks com Gin",
-              "data": "16 de julho - quinta-feira - 19h30",
-              "url": "",
-              "text": "Informações"
-      },
-          {
-              "img": "./assets/images/live/06.jpg",
-              "titulo": "Suntana - Wine & Music Harmonização Vinho com Música",
-              "data": "7 de julho - terça-feira - 19h30",
-              "url": "https://youtu.be/QLgSJQV8K-E",
-              "text": "Assistir",
-              "urlText": "Ver novamente",
-              "convidadoStatus": true,
-              "columnConvidado": "col-md-5 col-lg-5",
-              "convidado": "",
-              "content": "<p>Nada melhor do que curtir o friozinho na companhia de um bom vinho, não é mesmo? Na live “Suntana Wine & Music – Harmonização Vinho com Música”, o winehunter, Hassan Mousmar, ensina a escolher e degustar o vinho ideal para cada ocasião sem gastar muito! Além disso, o chef de cozinha, Guilherme Guzela, traz dicas sobre o acompanhamento ideal para cada tipo de vinho.  Tudo isso acompanhado de muita música boa com Bernardo Manita e Carine Luup, músicos convidados.</p>",
-              "convidados": [
-                  {
-                      "img": "./assets/images/suntana_convidado.png",
-                      "text": ""
-                  },
-                  {
-                      "img": "./assets/images/suntana_musicos.png",
-                      "text": ""
-                  }
-                  ],
-              "columnSopponsorstatus": false,
-              "columnSponsor": "col-md-8 col-lg-8",
-              "sponsor": [
-                  {
-                      "img": "./assets/images/fornecedor/img-01.jpg",
-                      "text": "fornecedores"
-                  }
-        ]
-      },
-          {
-              "img": "./assets/images/live/07.jpg",
-              "titulo": "Las Cepas – Desperte o seu Lado Chef",
-              "data": "14 de julho - terça-feira - 19h30",
-              "url": "",
-              "text": "Informações"
-              },
-          {
-              "img": "./assets/images/live/08.jpg",
-              "titulo": "Nestlé - Lanche da Tarde para toda a Família",
-              "data": "21 de julho - terça-feira - 19h30",
-              "url": "",
-              "text": "Informações"
-              },
-          {
-              "img": "./assets/images/live/09.jpg",
-              "titulo": "Nestlé - Receitas com Nescau para te Aquecer neste Inverno",
-              "data": "28 de julho - terça-feira - 19h30",
-              "url": "",
-              "text": "Informações"
-              }
-              ]
+    "blog": {
+      "col": 4,
+      "cant": 3,
+      "urlPost": "https://www.condor.com.br/institucional",
+      "buttom": "Ver tudo",
+      "status": true,
+      "titulo": "Blog",
+      "api": "https://teste.condor.com.br/blog/wp-json/wp/v2",
+      "tag": 244,
+      "link": "https://www.condor.com.br/blog/"
     }
   }
 ]

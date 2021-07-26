@@ -1,17 +1,17 @@
 :root {
-  --color-footer: #5c122d;
-  --color-primary:  #5c122d;
-  --color-tertiary: #fe564b;
+  --color-footer: #042d7d;
+  --color-primary:  #042d7d;
+  --color-tertiary: #eb0621;
   --color-quartery: #2b030b;
   --color-secondary: #d87941;
   --color-amarelho: #c3ad4a;
-  --color-lila: #f22a4e;
+  --color-lila: #eb0621;
   --color-text-muted: #757575;
   --color-clube-condor: #447ab3;
   --color-proximo: #004495;
 
   // Product
-  --color-oferta-secondary: #ff173f;
+  --color-oferta-secondary: #eb0621;
 
   @mixin font-weight($number) {
     font-weight: $number !important;

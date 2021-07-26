@@ -100,11 +100,9 @@ body {
 }
 
 .eletro {
-  color: #fff;
+  color: var(--color-primary);
   font-weight: 700;
-  a{
-    color: #d8d10e;
-  }
+  a{ color: var(--color-tertiary); }
 }
 // Ngx-pagination
 .ngx-pagination{
