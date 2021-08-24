@@ -1,40 +1,25 @@
 [
   {
-    "app": {
+    "appOld": {
       "status": true,
-      "titulo": "Baixe o aplicativo<br>do Clube Condor",
+      "text": "O seu clube de beneficios e descontos exclusivos",
+      "logo": "./assets/images/logo-clube.png",
+      "familia": "./assets/images/familia.png",
       "buttom": {
-        "titulo": "Faça seu cadastro",
+        "img": "./assets/images/buttom-app-old.png",
         "url": "https://clubecondor.com"
-      },
-      "logo": {
-        "img": "./assets/images/clube.png",
-        "alt": "Participe e economize ainda mais.",
-        "url": "https://clubecondor.com"
-      },
-      "download": [
-        {
-          "img": "./assets/images/app_store.png",
-          "alt": "Baixar na App Store",
-          "url": "https://apps.apple.com/br/app/clube-condor/id1453391822"
-        },
-        {
-          "img": "./assets/images/play_store.png",
-          "alt": "Baixar na Play Store",
-          "url": "https://play.google.com/store/apps/details?id=br.com.gsgroup.zoombox.condorsupermercados"
-        }
-      ]
+      }
     },
     "ofertas": {
       "status": true,
-      "titulo": "Ofertas do mês da mulher",
+      "titulo": "",
       "desktop": "./assets/images/title-desktop.png",
       "mobile": "./assets/images/title-mobile.png",
       "textOfertas": "./assets/images/text-ofertas.png",
       "collection": {
-        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=313083",
-        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=313083",
-        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=313083"
+        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=351425",
+        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=351425",
+        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=351425"
       },
       "promo": {
         "status": false,
@@ -62,71 +47,75 @@
         }
       ]
     },
-    "blog": {
-      "status": true,
-      "titulo": "Blog Condor",
-      "buttom": "Ver tudo",
-      "link": "http://www.condor.com.br/blog",
-      "tag": 50,
-      "cant": 3,
-      "col": 4,
-      "legal": ""
-    },
     "header": {
       "status": true,
-      "top": {
-        "left": {
-          "class": "col-12 col-md-7 col-lg-6",
-          "logo": "./assets/images/kv.png"
-        },
-        "right": {
-          "class": "col-12 col-md-5 col-lg-6 align-self-center",
-          "text": "Se conheça, se ame, se cuide!",
-          "buttom": {
-            "url": "#ofertas",
-            "texto": "VER OFERTAS"
-          }
-        }
+      "kv": "./assets/images/kv.png",
+      "kvMobile": "./assets/images/kv-mobile.png"
+    },
+    "condorEmCasa": {
+      "status": true,
+      "image": "./assets/images/em_casa.png",
+      "texto": "Você também pode fazer as compras para o Dia dos Pais sem sair de casa.",
+      "button": {
+        "img": "./assets/images/btn-casa.png",
+        "url": "https://www.condor.com.br/delivery/"
       },
-      "middle": {
-        "left": {
-          "status": true,
-          "class": "col-12 col-md-7 col-lg-6 align-self-center",
-          "youtube": "lsRsuOKLy50"
-        },
-        "right": {
-          "class": "col-12 col-md-5 col-lg-6",
-          "image": "./assets/images/promo.png"
-        }
-      },
-
-      "image": "./assets/images/familia.png"
-    },
-    "participar": {
-      "status": true,
-      "titulo": "Como participar",
-      "source": ["./assets/images/participar-1.png", "./assets/images/participar-2.png"]
-    },
-    "delivery": {
-      "status": true,
-      "link": "https://www.condor.com.br/delivery/index.html",
-      "text": "Compre on-line",
-      "icon": "./assets/images/market.svg"
-    },
-    "condoremcasa": {
-      "status": true,
-      "image": "./assets/images/emcasa.png",
-      "text": "leve a páscoa condor para sua casa",
-      "btn": "./assets/images/btn-casa.png",
-      "link": "https://www.condor.com.br/delivery"
+      "eletro": "Para comprar produtos de ELETRO, <a a href='https://loja.condor.com.br' target='_blank'>clique aqui</a>.",
+      "cupido": {
+        "mobile": "./assets/images/cupido_mobile.png"
+      }
     },
     "footer": {
       "status": true,
-      "title": "@Condor 2021. Todos os direitos reservados.",
-      "fb": "https://www.facebook.com/RedeCondor/",
-      "ig": "https://www.instagram.com/redecondor/",
-      "tw": "https://twitter.com/RedeCondor",
-      "yt": "https://www.youtube.com/user/redecondor"
+      "title": "©Condor 2021. Todos os direitos reservados.",
+      "source": [
+        {
+          "icon": "fab fa-facebook-f",
+          "url": "https://www.facebook.com/RedeCondor/"
+        },
+        {
+          "icon": "fab fa-instagram",
+          "url": "https://www.instagram.com/redecondor/"
+        },
+        {
+          "icon": "fab fa-twitter",
+          "url": "https://twitter.com/RedeCondor"
+        },
+        {
+          "icon": "fab fa-youtube",
+          "url": "https://www.youtube.com/user/redecondor"
+        }
+      ]
+    },
+    "condorMaisProximo": {
+      "status": true,
+      "titulo": "",
+      "form": {
+        "titulo": "Selecione a sua região a loja de preferência",
+        "region": "Selecione a Região",
+        "loja": "Selecione a Loja"
+      }
+    },
+    "filterIG": {
+      "status": false,
+      "titulo": "divirta-se com seu paizão usando nossos filtros especias!",
+      "source": [
+        {
+          "link": "https://bit.ly/32JXPqZ",
+          "mobile": "./assets/images/filtros/filtro-mobile-1.png",
+          "desktop": "./assets/images/filtros/filtro-desktop-1.png"
+        },
+        {
+          "link": "https://bit.ly/3vcihNz",
+          "mobile": "./assets/images/filtros/filtro-mobile-2.png",
+          "desktop": "./assets/images/filtros/filtro-desktop-2.png"
+        },
+        {
+          "link": "https://bit.ly/3tCEq7n",
+          "mobile": "./assets/images/filtros/filtro-mobile-3.png",
+          "desktop": "./assets/images/filtros/filtro-desktop-3.png"
+        }
+      ]
     },
     "menu": {
       "status": true,
@@ -136,14 +125,20 @@
       "source": [
         {
           "status": true,
+          "url": "#header",
+          "name": "Home",
+          "external": false
+        },
+        {
+          "status": true,
           "url": "#ofertas",
           "name": "Ofertas",
           "external": false
         },
         {
           "status": true,
-          "url": "#como-participar",
-          "name": "Como Participar",
+          "url": "#app",
+          "name": "Clube Condor",
           "external": false
         },
         {
@@ -151,14 +146,19 @@
           "url": "#blog",
           "name": "Blog",
           "external": false
-        },
-        {
-          "status": true,
-          "url": "https://www.condor.com.br/dinheiro-de-volta",
-          "name": "Dinheiro de volta",
-          "external": true
         }
       ]
+    },
+    "blog": {
+      "col": 4,
+      "cant": 3,
+      "urlPost": "https://www.condor.com.br/institucional",
+      "buttom": "Ver tudo",
+      "status": true,
+      "titulo": "Blog",
+      "api": "https://teste.condor.com.br/blog/wp-json/wp/v2",
+      "tag": 1121,
+      "link": "https://www.condor.com.br/blog/"
     }
   }
 ]

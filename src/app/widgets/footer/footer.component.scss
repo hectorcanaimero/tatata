@@ -1,7 +1,14 @@
 footer{
-  background: var(--color-footer);
-  color: #fff;
-  a{
-    color: #fff;
+  background: var(--color-secondary);
+  a { color: var(--color-lila); }
+  .copyright {
+    padding: .25rem 0;
+    background: var(--color-secondary);
+    p {
+      color: var(--color-lila);
+      margin-bottom: 0px;
+      font-size: .75rem;
+      text-align: center;
+    }
   }
 }

@@ -1,0 +1,64 @@
+<section *ngIf="item.status">
+  <div class="background py-4">
+    <div class="container">
+      <h2 class="titulo">{{ item.titulo  }}</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9">
+          <div class="box">
+            <h4 class="titulo pb-2">{{ item.form.titulo }}</h4>
+            <div class="row justify-content-center">
+              <div class="col-md-6 mb-3">
+                <select class="browser-default custom-select" (change)="onLoja($event)">
+                  <option selected>{{item.form.region  }}</option>
+                  <option *ngFor="let region of region$ | async; trackBy: trackById" [value]="region.slug">
+                    {{ region.name }}
+                  </option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <select class="browser-default custom-select" (change)="getLoja($event)">
+                  <option selected>{{ item.form.loja }}</option>
+                  <option *ngFor="let loja of lojas$ | async; trackBy: trackById" [value]="loja.slug">
+                    {{ loja.title1 }}
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="spinner" *ngIf="loading">
+            <div class="spinner-grow text-light" role="status" style="width: 3rem; height: 3rem;">
+              <span class="sr-only">Carregando...</span>
+            </div>
+          </div>
+          <div class="loja" *ngIf="loja$ | async as loja">
+            <h3 class="titulo mt-4">{{ loja.title1 }}</h3>
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6">
+                <div class="image">
+                  <img [src]="loja.full" class="w-100" alt="">
+                </div>
+              </div>
+              <div class="col-md-10 col-lg-6">
+                <div class="content" [innerHtml]="loja.content1"></div>
+              </div>
+              <div class="col-6">
+                <div class="text-center">
+                  <a [href]="loja.maps" class="a-button" target="_blank" mdbBtn color="primary" mdbWavesEffect>
+                    Como chegar
+                  </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="text-center">
+                  <a [href]="loja.avaliacao" class="a-button" target="_blank" mdbBtn color="danger" mdbWavesEffect>
+                    Avalie no Google
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

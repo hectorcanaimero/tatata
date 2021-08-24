@@ -1,0 +1,12 @@
+<section id="adega" *ngIf="item.status">
+  <div class="row no-gutters">
+    <div id="text" class="col-xl-7 align-self-center">
+      <h2 class="titulo" [innerHtml]="item.titulo"></h2>
+      <img [src]="item.galhos" alt="" class="img-fluid galho">
+    </div>
+    <div class="col-xl-5">
+      <img [src]="item.vinhos.desktop" class="img-fluid d-none d-xl-block" alt="">
+      <img [src]="item.vinhos.mobile" class="w-100 d-xl-none" alt="">
+    </div>
+  </div>
+</section>

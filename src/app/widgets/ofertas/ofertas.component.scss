@@ -1,15 +1,15 @@
 section{
-  background-color: #fafafa;
+  background-color: var(--color-primary);
   #ofertas{
     .titulo{
       font-size: 2.2rem;
       font-weight: 900;
       text-align: center;
-      color: var(--color-primary);
+      color: #fff;
       margin: 2rem 0;
     }
     .subtitulo {
-      color: var(--color-secondary) !important;
+      color: #fff;
       font-weight: 700;
       text-align: center;
       margin: 1.3rem 0;

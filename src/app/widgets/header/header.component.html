@@ -1,55 +1,9 @@
-<!-- <header id="header" class="pt-5" *ngIf="item.status">
-  <div class="container pt-xl-5 pt-md-3">
-    <div class="row justify-content-center">
-      <div [class]="item.top.left.class">
-        <a [routerLink]="['']">
-          <img [src]="item.top.left.logo" alt="" class="img-fluid" />
-        </a>
-      </div>
-      <div [class]="item.top.right.class">
-        <div class="text-center pt-4">
-          <h1 class="lead" [innerHtml]="item.top.right.text"></h1>
-          <a [ngxScrollTo]="item.top.right.buttom.url" class="btn btn-condor rounded-pill z-depth-2 mb-4">
-            <h4 class="mb-0">{{ item.top.right.buttom.texto }}</h4>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div [class]="item.middle.left.class" *ngIf="item.middle.left.status">
-        <div class="bg-mobile">
-          <app-youtube [code]="item.middle.left.youtube"></app-youtube>
-        </div>
-      </div>
-      <div [class]="item.middle.right.class">
-        <img [src]="item.middle.right.image" alt="" class="img-fluid" />
-      </div>
-    </div>
-  </div>
-</header> -->
-
-<header id="header" *ngIf="item.status" [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
+<header id="header" *ngIf="item.status">
   <app-menu [item]="menu"></app-menu>
-  <div class="container">
-    <div class="flex-center">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6">
-          <a href="">
-            <img [src]="item.kv" class="img-fluid" alt="Corrente de Esperanca">
-          </a>
-        </div>
-      </div>
-    </div>
+  <div class="pad-top d-none d-lg-block">
+    <img [src]="item.kv" class="w-100" alt="">
+  </div>
+  <div class="pad-top d-lg-none">
+    <img [src]="item.kvMobile" class="w-100" alt="">
   </div>
 </header>
-<div class="youtube" *ngIf="item.youtube.status">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-7">
-        <div class="frame">
-          <app-youtube [id]="item.youtube.id"></app-youtube>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>

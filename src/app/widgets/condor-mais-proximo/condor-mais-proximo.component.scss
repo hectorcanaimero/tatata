@@ -1,0 +1,47 @@
+section {
+  .a-button {
+    margin: 0rem !important;
+    padding: .84rem .5rem;
+  }
+  .background {
+    padding: 2rem 0;
+    .titulo {
+      text-align: center;
+      color: var(--color-primary);
+      font-weight: 800;
+      padding-bottom: 1rem;
+      text-shadow: 1px 2px 3px rgba($color: #000000, $alpha: .30);
+    }
+    .box {
+      background-color: var(--color-tertiary);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: .30);
+      .titulo {
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+    .spinner {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loja {
+      color: #fff;
+      .image {
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        img {
+          border-radius: 5px;
+        }
+      }
+      .titulo {
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+  }
+}

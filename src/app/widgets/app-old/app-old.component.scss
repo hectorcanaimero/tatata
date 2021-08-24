@@ -1,0 +1,41 @@
+section {
+  background: url('../../../assets/images/app-old-bg.png') no-repeat top center;
+  background-size: cover;
+  .dados {
+    text-align: center;
+    .logo {
+      width: 75%;
+      margin: 0 0 2rem;
+    }
+    .text {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    a {
+      img{
+        width: 100%;
+        margin: 0 0 2rem;
+      }
+    }
+  }
+}
+
+@media(min-width: 990px) {
+  section {
+    .dados {
+      .logo {
+        width: 60%
+      }
+      .text {
+        font-size: 2rem;
+      }
+      a {
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

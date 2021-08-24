@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-clube-condor',
@@ -12,6 +13,7 @@ export class ClubeCondorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    timer(300).subscribe(() => console.log(this.item));
   }
 
 }

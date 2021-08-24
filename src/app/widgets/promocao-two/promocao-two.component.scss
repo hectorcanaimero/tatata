@@ -1,0 +1,66 @@
+section {
+  #text{
+    position: relative;
+    .galho {
+      max-width: 70%;
+      z-index: -1;
+      position: absolute;
+      top: 10rem;
+    }
+    .titulo{
+      margin-top: 1.5rem;
+      z-index: 99999 !important;
+      padding: 0 1rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--color-lila) ;
+      text-shadow: 1px 3px 5px rgba($color: #000000, $alpha: .50);
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  section {
+    #text{
+      .galho {
+        max-width: 70%;
+        top: 13rem;
+      }
+      .titulo{
+        margin-top: 2rem;
+        padding: 0 3rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media(min-width: 990px) {
+  section {
+    #text{
+      .galho {
+        max-width: 70%;
+      }
+      .titulo{
+        margin-top: 2.5rem;
+        padding: 0 3rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  section {
+    #text{
+      .galho {
+        max-width: 100%;
+        top: 7rem;
+      }
+      .titulo{
+        padding: 0 4rem;
+        font-size: 2.3rem;
+      }
+    }
+  }
+}

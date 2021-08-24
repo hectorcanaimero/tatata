@@ -1,0 +1,21 @@
+<section id="condor-em-casa" *ngIf="item.status">
+  <div class="image">
+    <img src="./assets/images/bg-delivery.png" class="w-100" alt="">
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-10 col-md-7">
+          <img [src]="item.image" [alt]="item.text" class="img-fluid">
+        </div>
+        <div class="col-10 col-md-4 align-self-center">
+          <a [href]="item.button.url" target="_blank">
+            <h3 class="titulo">{{ item.texto }}</h3>
+            <img [src]="item.button.img" [alt]="item.texto" class="img-fluid px-2 pb-3">
+          </a>
+          <p class="eletro" [innerHtml]="item.eletro"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

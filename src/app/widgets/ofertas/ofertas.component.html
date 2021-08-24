@@ -1,4 +1,4 @@
-<section id="ofertas-chocolate" class="py-5"  *ngIf="item.status">
+<section id="ofertas-chocolate" class="pb-5"  *ngIf="item.status">
   <div id="ofertas" class="ofertas" *ngIf="(loja$ | async ) as loja">
     <div class="container position-relative">
       <div class="row justify-content-center" *ngIf="item.promo.status">
@@ -23,7 +23,7 @@
         <div class="col-md-6 col-lg-5">
           <select class="browser-default custom-select select mb-3 form-control" (change)="goToLoja($event)">
             <option value="" selected>Selecione a Loja</option>
-            <option *ngFor="let item of lojas$ | async" [value]="item.slug">{{ item.title?.rendered }}</option>
+            <option *ngFor="let item of lojas$ | async" [value]="item.cod_loja">{{ item.title?.rendered }}</option>
           </select>
         </div>
       </div>
