@@ -1,0 +1,27 @@
+<section id="participar" class="pt-2 pb-0" *ngIf="item.status">
+  <div class="container">
+    <div class="row justify-content-center no-gutters">
+      <div class="col-md-10  col-xl-3 align-self-center mb-3">
+        <p class="a">{{ item.a }}</p>
+      </div>
+      <div class="col-6  col-xl-3 pl-4 align-self-center mb-3">
+        <p class="b">{{ item.b }}</p>
+        <div class="d-flex c1">
+          <p class="c">{{ item.c }}</p>
+          <p class="d">{{ item.d }}</p>
+          <p class="e">{{ item.e }}</p>
+        </div>
+      </div>
+      <div class="col-6  col-xl-2 align-self-center mb-3">
+        <p class="f">{{ item.f }}</p>
+        <p class="g" [innerHtml]="item.g"></p>
+      </div>
+      <div class="col-1 col-md-1 col-lg-1 align-self-center">
+        <p class="h">{{ item.h }}</p>
+      </div>
+      <div class="col-9 col-md-7 col-lg-8 col-xl-3 align-self-center">
+        <p class="i">{{ item.i }}</p>
+      </div>
+    </div>
+  </div>
+</section>

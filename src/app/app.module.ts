@@ -10,6 +10,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 registerLocaleData(localePt);
 import { APP_ROUTE } from './app.routes';
 import { AppComponent } from './app.component';
+import { LottieModule } from 'ngx-lottie';
 
 
 declare var Hammer;
@@ -20,15 +21,14 @@ export class HammerConfig extends HammerGestureConfig {
     const mc = new Hammer(element, {
       touchAction: 'auto',
       inputClass: Hammer.SUPPORT_POINTER_EVENTS ? Hammer.PointerEventInput : Hammer.TouchInput,
-      recognizers: [
-        [
-          Hammer.Swipe,
-          { direction: Hammer.DIRECTION_HORIZONTAL }
-        ]
-      ]
+      recognizers: [ [  Hammer.Swipe, { direction: Hammer.DIRECTION_HORIZONTAL } ] ]
     });
     return mc;
   }
+}
+
+export function playerFactory() {
+  return import(/* webpackChunkName: 'lottie-web' */ 'lottie-web');
 }
 
 @NgModule({
@@ -42,6 +42,7 @@ export class HammerConfig extends HammerGestureConfig {
     HttpClientModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
+    LottieModule.forRoot({ player: playerFactory })
   ],
   providers: [
     { provide: HAMMER_GESTURE_CONFIG, useClass: HammerConfig },

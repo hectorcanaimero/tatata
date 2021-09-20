@@ -1,0 +1,8 @@
+<section id="quiz" class="py-5" *ngIf="item.status" [ngStyle]="{'background-color': item.style.bg}">
+  <div class="container">
+    <h2 class="titulo" [innerHtml]="item.titulo" [ngStyle]="{'color': item.style.color}"></h2>
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe class="embed-responsive-item" [id]="item.quiz.id" [src]="url"></iframe>
+    </div>
+  </div>
+</section>

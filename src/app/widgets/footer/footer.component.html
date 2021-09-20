@@ -1,3 +1,12 @@
+<section *ngIf="item.status" class="py-3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-11">
+        <p class="text-legal" [innerHtml]="item.legal"></p>
+      </div>
+    </div>
+  </div>
+</section>
 <footer id="footer" *ngIf="item.status">
   <div class="container py-2">
     <div class="row ios justify-content-between">

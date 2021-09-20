@@ -1,0 +1,22 @@
+{
+  "cod_produto": 1739606,
+  "dsc_produto": "LEITE PO TIROL INTEG.INST.400G SACHE",
+
+
+
+
+  "nom_produto": "Leite em P\u00f3 Tirol",
+  "dsc_detalhe_produto": "400g - Integral - Instant\u00e2neo - Sach\u00ea",
+
+
+
+
+  "dsc_combo": null,
+  "dsc_folheto": "",
+  "dsc_comercial": "LEITE PO TIROL INTEG",
+  "cod_referencia_wikimee": "1000356",
+
+
+
+
+  "mercadologico": {"departamento": {"ind_nivel": 1, "cod_mercadologico": 1, "dsc_mercadologico": "MERCEARIA"}, "setor": {"ind_nivel": 2, "cod_mercadologico": 3, "dsc_mercadologico": "SECA DOCE"}, "grupo_familia": {"ind_nivel": 3, "cod_mercadologico": 46, "dsc_mercadologico": "LEITE EM PO"}, "familia": {"ind_nivel": 4, "cod_mercadologico": 2, "dsc_mercadologico": "INTEGRAL/INSTANTANEO SACHE"}}, "embalagem_venda": {"cod_embalagem_venda": "UN", "vlr_quantidade_embalagem": 1, "dsc_unidade_venda": "Cada"}, "dsc_informacao_legal": "O Minist\u00e9rio da Sa\u00fade informa: ap\u00f3s os 6 (seis) meses de idade continue amamentando seu filho e ofere\u00e7a novos alimentos. O Minist\u00e9rio da Sa\u00fade Informa: o aleitamento materno evita infec\u00e7\u00f5es e alergias e \u00e9 recomendado at\u00e9 os 2 (dois) anos de idade ou mais.", "lst_ean": [7896256604931], "lst_mix_lojas": [3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 91], "lst_mercadologico_web": [{"departamento": {"ind_nivel": 1, "cod_mercadologico": 1, "dsc_mercadologico": "Alimentos"}, "setor": {"ind_nivel": 2, "cod_mercadologico": 18, "dsc_mercadologico": "Leites e Matinais"}, "grupoFamilia": null}], "lst_preco_regiao": [{"cod_regiao": 3, "ind_destaque": false, "ind_tipo_item_kit_regular": null, "ind_tipo_item_kit_clube": null, "vlr_preco_regular": 9.29, "vlr_parcela_regular": null, "qtd_parcela_regular": null, "vlr_preco_clube": 0, "vlr_parcela_clube": null, "qtd_parcela_clube": null, "lst_mix_regiao": [48, 51, 52, 55, 57], "vlr_cashback_clube": null}, {"cod_regiao": 4, "ind_destaque": false, "ind_tipo_item_kit_regular": null, "ind_tipo_item_kit_clube": null, "vlr_preco_regular": 9.29, "vlr_parcela_regular": null, "qtd_parcela_regular": null, "vlr_preco_clube": 0, "vlr_parcela_clube": null, "qtd_parcela_clube": null, "lst_mix_regiao": [20, 40, 41, 9, 15], "vlr_cashback_clube": null}, {"cod_regiao": 10, "ind_destaque": false, "ind_tipo_item_kit_regular": null, "ind_tipo_item_kit_clube": null, "vlr_preco_regular": 9.29, "vlr_parcela_regular": null, "qtd_parcela_regular": null, "vlr_preco_clube": 0, "vlr_parcela_clube": null, "qtd_parcela_clube": null, "lst_mix_regiao": [3, 4, 5, 6, 7, 8, 10, 11, 13, 14, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 91, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 42, 43, 44, 45, 46, 47, 49, 50, 53, 54, 56, 58], "vlr_cashback_clube": null}], "lst_grupo_preco": null}

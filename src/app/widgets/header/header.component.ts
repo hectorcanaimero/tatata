@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
 
   @Input() item: any = [];
   @Input() menu: any = [];
+  @Input() participar: any = [];
 
   constructor() { }
 

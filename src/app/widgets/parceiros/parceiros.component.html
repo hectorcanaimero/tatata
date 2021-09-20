@@ -1,0 +1,19 @@
+<section id="parceiros" class="py-5" *ngIf="item.status" [ngStyle]="{'background-color': item.style.bg}">
+  <div class="container-fluid">
+    <h2 class="titulo" [innerHtml]="item.titulo" [ngStyle]="{'color': item.style.color}"></h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-2 d-none d-lg-block">
+        <ng-lottie width="100%" height="auto" [options]="options" ></ng-lottie>
+      </div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <img [src]="item.image.desktop" class="img-fluid mx-auto d-none d-md-block" alt="Parceiros">
+          <img [src]="item.image.mobile" class="img-fluid mx-auto d-md-none" alt="Parceiros">
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <ng-lottie width="100%" height="auto" [options]="options" ></ng-lottie>
+      </div>
+    </div>
+  </div>
+</section>

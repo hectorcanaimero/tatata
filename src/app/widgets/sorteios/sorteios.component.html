@@ -1,0 +1,31 @@
+<section id="sorteios" class="py-5" *ngIf="item.status">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 mb-3">
+        <h2 class="titulo">{{ item.nds }}</h2>
+      </div>
+      <div class="col-12 col-md-8 col-xl-5 mb-5">
+        <a [href]="item.buttom.url" target="_blank" class="button">
+          <p class="mb-0 d-none d-md-block">{{ item.buttom.titulo }}</p>
+          <p class="mb-0 d-md-none" [innerHtml]="item.buttom.titulo2"></p>
+        </a>
+      </div>
+      <div class="col-12 mb-5">
+        <h2 class="titulo">{{ item.titulo }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let card of item.source">
+        <div class="sorteio-box">
+          <h3 class="titulo mb-0" [ngClass]="{'mb-1': card.number }">{{ card.data }}</h3>
+          <p class="texto" *ngIf="card.number">
+            {{ item.textoLegal }} <span class="number">n° {{ card.number }}. </span>
+            <span class="link">
+              <a href="{{ item.url }}/assets/pdf/{{card.file}}" target="_blank">Ver ganhadores</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

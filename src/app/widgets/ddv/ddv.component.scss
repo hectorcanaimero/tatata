@@ -1,0 +1,52 @@
+section{
+  background: url('../../../assets/images/bd-ddv.png') no-repeat bottom center;
+  background-size: cover;
+  .titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-weight: 800;
+    color: var(--color-amarelho);
+    text-shadow: 3px 3px 4px rgba($color: #000000, $alpha: .30);
+  }
+  .subtitulo {
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 0;
+    text-shadow: 3px 3px 4px rgba($color: #000000, $alpha: .30);
+  }
+  .one {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 60px;
+  }
+  .button {
+    p {
+      border-radius: 10px;
+      background-color: var(--color-amarelho);
+      text-align: center;
+      padding: 1rem 1.5rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      border: 5px solid #d0d0d0;
+      color: var(--color-primary);
+      &:hover {
+        background-color: #c6b116;
+        border: 5px solid #fafafa;
+      }
+    }
+  }
+}
+
+
+@media(min-width: 1200px) {
+  .titulo { font-size: 4rem; }
+  .subtitulo { font-size: 2rem; }
+  .one {
+    top: 5px;
+    right: 35px;
+    width: 80px;
+  }
+}

@@ -1,3 +1,4 @@
+import { ParticiparModule } from './../participar/participar.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -15,6 +16,7 @@ import { HeaderComponent } from './header.component';
     MenuModule,
     CommonModule,
     HelperModule,
+    ParticiparModule,
     MDBBootstrapModule
   ]
 })

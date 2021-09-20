@@ -67,7 +67,7 @@ body {
 
 @media(min-width: 1200px) {
   .navbar {
-    background: rgba($color: #000000, $alpha: 0) !important;
+    background: rgba($color: #000000, $alpha: 0.4) !important;
     box-shadow: 0 0px 0px 0 rgb(0 0 0 / 16%), 0 0px 0px 0 rgb(0 0 0 / 12%) !important;
     ul{
       li{
@@ -129,4 +129,12 @@ body {
   .disabled{
     background: rgba($color: #000000, $alpha: 0) !important;
   }
+}
+
+
+.moving {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100000000000 !important;
 }

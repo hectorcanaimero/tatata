@@ -17,9 +17,9 @@
       "mobile": "./assets/images/title-mobile.png",
       "textOfertas": "./assets/images/text-ofertas.png",
       "collection": {
-        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=348345",
-        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=348345",
-        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=348345"
+        "menu": "Menus/MenuDepartamentoOfertasLojaCampanha?campanha=355865",
+        "ofertas": "Ofertas/LojaProdutosCampanha?campanha=355865",
+        "departamento": "Ofertas/LojaProdutosCampanhaDepartamento?campanha=355865"
       },
       "promo": {
         "status": false,
@@ -51,61 +51,11 @@
       "status": true,
       "background": "./assets/images/bg_header_mobile.png",
       "kv": "./assets/images/kv.png",
-      "title": {
-        "img": "./assets/images/header-right.png",
-        "alt": "Bom gosto e economia para momentos especiais."
-      },
-      "youtube": {
-        "status": true,
-        "id": "c967Oztsvlc"
-      }
-    },
-    "condorEmCasa": {
-      "status": true,
-      "image": "./assets/images/em_casa.png",
-      "texto": "Você também pode fazer as compras para o Dia dos Pais sem sair de casa.",
-      "button": {
-        "img": "./assets/images/btn-casa.png",
-        "url": "https://www.condor.com.br/delivery/"
-      },
-      "eletro": "Para comprar produtos de ELETRO, <a a href='https://loja.condor.com.br' target='_blank'>clique aqui</a>.",
-      "cupido": {
-        "mobile": "./assets/images/cupido_mobile.png"
-      }
-    },
-    "footer": {
-      "status": true,
-      "title": "©Condor 2021. Todos os direitos reservados.",
-      "source": [
-        {
-          "icon": "fab fa-facebook-f",
-          "url": "https://www.facebook.com/RedeCondor/"
-        },
-        {
-          "icon": "fab fa-instagram",
-          "url": "https://www.instagram.com/redecondor/"
-        },
-        {
-          "icon": "fab fa-twitter",
-          "url": "https://twitter.com/RedeCondor"
-        },
-        {
-          "icon": "fab fa-youtube",
-          "url": "https://www.youtube.com/user/redecondor"
-        }
-      ]
-    },
-    "condorMaisProximo": {
-      "status": true,
-      "titulo": "",
-      "form": {
-        "titulo": "Selecione a sua região a loja de preferência",
-        "region": "Selecione a Região",
-        "loja": "Selecione a Loja"
-      }
+      "kv2": "./assets/images/kv-2.png",
+      "title": "SÃO MUITAS CHANCES DE GANHAR!"
     },
     "filterIG": {
-      "status": false,
+      "status": true,
       "titulo": "divirta-se com seu paizão usando nossos filtros especias!",
       "source": [
         {
@@ -139,20 +89,20 @@
         },
         {
           "status": true,
+          "url": "#sorteios",
+          "name": "Ganhadores",
+          "external": false
+        },
+        {
+          "status": true,
           "url": "#ofertas",
           "name": "Ofertas",
           "external": false
         },
         {
           "status": true,
-          "url": "#condor-em-casa",
-          "name": "Condor em Casa",
-          "external": false
-        },
-        {
-          "status": true,
-          "url": "#app",
-          "name": "Clube Condor",
+          "url": "#ddv",
+          "name": "Dinheiro de Volta",
           "external": false
         },
         {
@@ -166,6 +116,35 @@
           "url": "#blog",
           "name": "Blog",
           "external": false
+        },
+        {
+          "status": true,
+          "url": "/assets/pdf/regulamento.pdf",
+          "name": "Regulamento",
+          "external": true
+        }
+      ]
+    },
+    "footer": {
+      "status": true,
+      "title": "©Condor 2021. Todos os direitos reservados.",
+      "legal": "Poderá participar desta campanha promocional qualquer consumidor, pessoa física, participante do Clube Condor, com cadastro completo, maior de 18 anos, que efetuar uma compra no valor de R$ 50,00 em uma das lojas Condor. Período de inscrição de 23/09/2021 a 04/11/2021. Promoção válida de 23/09/2021 a 08/11/2021 e autorizada pela SECAP/ME n.º XXXXXXXXXX-XXXX. Consulte os seus números da sorte, produtos participantes, certificado de autorização e regulamento aqui.",
+      "source": [
+        {
+          "icon": "fab fa-facebook-f",
+          "url": "https://www.facebook.com/RedeCondor/"
+        },
+        {
+          "icon": "fab fa-instagram",
+          "url": "https://www.instagram.com/redecondor/"
+        },
+        {
+          "icon": "fab fa-twitter",
+          "url": "https://twitter.com/RedeCondor"
+        },
+        {
+          "icon": "fab fa-youtube",
+          "url": "https://www.youtube.com/user/redecondor"
         }
       ]
     },
@@ -179,6 +158,122 @@
       "api": "https://teste.condor.com.br/blog/wp-json/wp/v2",
       "tag": 244,
       "link": "https://www.condor.com.br/blog/"
+    },
+    "quiz": {
+      "status": true,
+      "titulo": "Quiz",
+      "style": {
+        "bg": "#EDEDED",
+        "color": "#0014B5"
+      },
+      "quiz": {
+        "id": "interactApp603e3101bdff1d0017462df6",
+        "link": "https://quiz.tryinteract.com/#/603e3101bdff1d0017462df6?method=iframe&mobile=1"
+      }
+    },
+    "parceiros": {
+      "status": true,
+      "titulo": "Parceiros",
+      "style": {
+        "bg": "#fafafa",
+        "color": "#0014B5"
+      },
+      "image": {
+        "mobile":  "./assets/images/parceiros_mobile.png",
+        "desktop": "./assets/images/parceiros_mobile.png"
+      }
+    },
+    "ddv": {
+      "status": true,
+      "logo": "./assets/images/logo-ddv.png",
+      "selo": "./assets/images/ddv-selo.png",
+      "titulo": "OFERTAS IMBATÍVEIS",
+      "subtitulo": "E CRÉDITOS PARA A SUA PRÓXIMA COMPRA.",
+      "buttom": {
+        "url" : "https://www.condor.com.br/dinheiro-de-volta",
+        "text": "Clique e aproveite"
+      }
+    },
+    "sorteios": {
+      "status": true,
+      "titulo": "SORTEIOS",
+      "textoLegal": "Resultado da loteria Federal ",
+      "url": "https://www.condor.com.br/aniversario",
+      "nds": "NÚMEROS DA SORTE",
+      "buttom": {
+        "titulo": "consultar os meus números",
+        "titulo2": "consultar os <br> meus números",
+        "url": "https://clubecondor.com"
+      },
+      "source": [
+        {
+          "data": "02/10/2021",
+          "number": 3344,
+          "file": "010921.pdf"
+        },
+        {
+          "data": "06/10/2021",
+          "number": 0,
+          "file": "080921.pdf"
+        },
+        {
+          "data": "09/10/2021",
+          "number": 0,
+          "file": "150921.pdf"
+        },
+        {
+          "data": "13/10/2021",
+          "number": 0,
+          "file": "220921.pdf"
+        },
+        {
+          "data": "16/10/2021",
+          "number": 0,
+          "file": "290921.pdf"
+        },
+        {
+          "data": "20/10/2021",
+          "number": 0,
+          "file": "061021.pdf"
+        },
+        {
+          "data": "23/10/2021",
+          "number": 0,
+          "file": "131021.pdf"
+        },
+        {
+          "data": "27/10/2021",
+          "number": 0,
+          "file": "201021.pdf"
+        },
+        {
+          "data": "30/10/2021",
+          "number": 0,
+          "file": "271021.pdf"
+        },
+        {
+          "data": "03/11/2021",
+          "number": 0,
+          "file": "031121.pdf"
+        },
+        {
+          "data": "06/11/2021",
+          "number": 0,
+          "file": "101121.pdf"
+        }
+      ]
+    },
+    "participar": {
+      "status": true,
+      "a": "COMO PARTICIPAR",
+      "b": "A CADA",
+      "c": "R$ ",
+      "d": 50,
+      "e": ",00",
+      "f": "REAIS",
+      "g":"EM COMPRAS <br>NO CONDOR",
+      "h":"=",
+      "i":"1 NÚMERO DA SORTE"
     }
   }
 ]

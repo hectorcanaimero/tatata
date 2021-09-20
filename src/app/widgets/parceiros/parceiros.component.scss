@@ -1,0 +1,22 @@
+section {
+  .titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 2.7rem;
+  }
+  #ballon-left {
+    .two {
+      top: 40px;
+      right: -20px;
+      width: 140px;
+    }
+  }
+  #ballon-right {
+    .one {
+      top: 40px;
+      left: -30px;
+      width: 110px;
+    }
+  }
+}
