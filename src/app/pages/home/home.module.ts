@@ -10,6 +10,7 @@ import { HomeComponent } from './home.component';
 import { DdvModule } from './../../widgets/ddv/ddv.module';
 import { BlogModule } from '../../widgets/blog/blog.module';
 import { QuizModule } from './../../widgets/quiz/quiz.module';
+import { GamesModule } from './../../widgets/games/games.module';
 import { FooterModule } from 'src/app/widgets/footer/footer.module';
 import { HeaderModule } from 'src/app/widgets/header/header.module';
 import { OfertasModule } from '../../widgets/ofertas/ofertas.module';
@@ -28,6 +29,7 @@ const app: Routes = [{ path: '', component: HomeComponent }];
     DdvModule,
     BlogModule,
     QuizModule,
+    GamesModule,
     CommonModule,
     FooterModule,
     HeaderModule,

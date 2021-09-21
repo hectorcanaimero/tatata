@@ -1,0 +1,42 @@
+#one {
+  background-color: var(--color-tertiary);
+  background: url('../../../assets/images/bg-games.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+#two {
+  background-color: var(--color-tertiary);
+}
+
+.block {
+  // background-color: #efefef;
+  // min-height: 300px;
+  // border-radius: 10px;
+  // box-shadow: 2px 3px 4px rgba($color: #000000, $alpha: .30);
+  img {
+    border-radius: 10px;
+  }
+}
+
+.subtitle {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  span {
+    background: #98e3e6;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px rgba($color: #000000, $alpha: .30);
+  }
+}
+
+.titulo {
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+}

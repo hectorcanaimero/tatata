@@ -16,3 +16,24 @@ section{
     }
   }
 }
+
+@media(min-width: 768px) {
+  section{
+    .image {
+      padding-top: 10px;
+      background-color: var(--color-primary);
+    }
+    .content {
+      background: url('../../../assets/images/bg-fundo-delivery.png') repeat-y;
+      background-size: cover;
+      a{
+        color: var(--color-primary);
+        .titulo {
+          margin: 2rem 0;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

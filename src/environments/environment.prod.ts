@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  name: 'aniversario',
+  name: 'dia-das-criancas',
   v2: 'https://painel.condor.com.br',
   v1: 'https://marketing.condor.com.br/api',
   v3: 'https://teste.condor.com.br/news/wp-json/wp/v2',

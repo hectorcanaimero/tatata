@@ -1,8 +1,9 @@
 header{
-  background: url('../../../assets/images/bg_header_desktop.png') no-repeat bottom center;
+  background-color: var(--color-tertiary);
+  background: url('../../../assets/images/bg-games.png') no-repeat top center;
   background-size: cover;
-  .content {
-    padding-top: 5rem;
+  .kv {
+    padding-top: 3.5rem;
   }
   .title {
     -webkit-text-stroke-width: 2px;

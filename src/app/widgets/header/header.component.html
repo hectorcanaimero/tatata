@@ -1,4 +1,4 @@
-<header id="header" *ngIf="item.status">
+<!-- <header id="header" *ngIf="item.status">
   <app-menu [item]="menu"></app-menu>
   <div class="content">
     <div class="container-fluid">
@@ -16,4 +16,25 @@
     </div>
   </div>
   <app-participar [item]="participar"></app-participar>
+</header> -->
+
+<header id="header" *ngIf="item.status">
+  <app-menu [item]="menu"></app-menu>
+  <div class="kv">
+    <img src="./assets/images/kv-desktop.png" class="w-100 d-none d-md-block" alt="">
+    <img src="./assets/images/kv-mobile.png" class="w-100 d-md-none" alt="">
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-3 col-xl-3 align-self-end d-none d-md-block">
+        <img src="./assets/images/kv-m-1.png" class="img-fluid" alt="">
+      </div>
+      <div class="col-8 col-md-6 col-xl-5">
+        <img src="./assets/images/kv-m-2.png" class="img-fluid" alt="">
+      </div>
+      <div class="col-md-3 col-xl-3 align-self-end d-none d-md-block">
+        <img src="./assets/images/kv-m-3.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
 </header>
